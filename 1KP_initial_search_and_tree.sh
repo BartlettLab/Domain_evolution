@@ -27,7 +27,7 @@ module load R/3.6.1_packages/tidyverse/1.3.0 gcc/8.1.0
 #       that fall within the ratiation after divergence with the Amborella copy.
 ################################################################################
 #run as bsub < /home/jm33a/domain_evolution/1KP_initial_search_and_tree.sh
-
+#modification test
 
 run="HBD"
 
