@@ -1,0 +1,12 @@
+
+
+git status # check on what needs updating
+
+#to add all modified files to the staging area
+git add .
+
+#to commit these:
+git commit -m "message about commit"
+
+#not sure why, but avbove doesn't show up on web interface until this command is issued
+git push origin master
