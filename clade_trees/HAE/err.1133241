@@ -1,52 +1,0 @@
-
-nthread = 0
-stacksize: -1 kb
-Gap Penalty = -1.53, +0.00, +0.00
-
-
-
-Making a distance matrix ..
-    1 / 9
-done.
-
-Constructing a UPGMA tree (efffree=0) ... 
-    0 / 9
-done.
-
-Progressive alignment 1/2... 
-STEP     1 / 8 fSTEP     2 / 8 fSTEP     3 / 8 fSTEP     4 / 8 f
-Reallocating..done. *alloclen = 3022
-STEP     5 / 8 dSTEP     6 / 8 dSTEP     7 / 8 dSTEP     8 / 8 d
-done.
-
-Making a distance matrix from msa.. 
-    0 / 9
-done.
-
-Constructing a UPGMA tree (efffree=1) ... 
-    0 / 9
-done.
-
-Progressive alignment 2/2... 
-STEP     1 / 8 fSTEP     2 / 8 f
-Reallocating..done. *alloclen = 3012
-STEP     3 / 8 dSTEP     4 / 8 dSTEP     5 / 8 dSTEP     6 / 8 dSTEP     7 / 8 fSTEP     8 / 8 d
-done.
-
-disttbfast (aa) Version 7.313 alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
-0 thread(s)
-
-
-Strategy:
- FFT-NS-2 (Fast but rough)
- Progressive method (guide trees were built 2 times.)
-
-If unsure which option to use, try 'mafft --auto input > output'.
-For more information, see 'mafft --help', 'mafft --man' and the mafft page.
-
-The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
-It tends to insert more gaps into gap-rich regions than previous versions.
-To disable this change, add the --leavegappyregion option.
-
-/home/jm33a/.lsbatch/1579207377.1133241.shell: line 55: syntax error near unexpected token `done'
-/home/jm33a/.lsbatch/1579207377.1133241.shell: line 55: `done'

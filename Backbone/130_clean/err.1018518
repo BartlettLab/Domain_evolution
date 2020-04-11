@@ -1,52 +1,0 @@
-
-nthread = 0
-stacksize: -1 kb
-Gap Penalty = -1.53, +0.00, +0.00
-
-
-
-Making a distance matrix ..
-    1 / 130  101 / 130
-done.
-
-Constructing a UPGMA tree (efffree=0) ... 
-    0 / 130   10 / 130   20 / 130   30 / 130   40 / 130   50 / 130   60 / 130   70 / 130   80 / 130   90 / 130  100 / 130  110 / 130  120 / 130
-done.
-
-Progressive alignment 1/2... 
-STEP     1 / 129 fSTEP     2 / 129 fSTEP     3 / 129 fSTEP     4 / 129 fSTEP     5 / 129 fSTEP     6 / 129 fSTEP     7 / 129 fSTEP     8 / 129 fSTEP     9 / 129 fSTEP    10 / 129 fSTEP    11 / 129 fSTEP    12 / 129 fSTEP    13 / 129 fSTEP    14 / 129 fSTEP    15 / 129 fSTEP    16 / 129 fSTEP    17 / 129 fSTEP    18 / 129 fSTEP    19 / 129 fSTEP    20 / 129 fSTEP    21 / 129 fSTEP    22 / 129 fSTEP    23 / 129 fSTEP    24 / 129 dSTEP    25 / 129 fSTEP    26 / 129 fSTEP    27 / 129 fSTEP    28 / 129 fSTEP    29 / 129 fSTEP    30 / 129 fSTEP    31 / 129 dSTEP    32 / 129 fSTEP    33 / 129 f
-Reallocating..done. *alloclen = 3321
-STEP    34 / 129 dSTEP    35 / 129 fSTEP    36 / 129 fSTEP    37 / 129 fSTEP    38 / 129 fSTEP    39 / 129 fSTEP    40 / 129 fSTEP    41 / 129 dSTEP    42 / 129 dSTEP    43 / 129 fSTEP    44 / 129 dSTEP    45 / 129 fSTEP    46 / 129 dSTEP    47 / 129 dSTEP    48 / 129 dSTEP    49 / 129 fSTEP    50 / 129 dSTEP    51 / 129 fSTEP    52 / 129 fSTEP    53 / 129 fSTEP    54 / 129 fSTEP    55 / 129 fSTEP    56 / 129 dSTEP    57 / 129 dSTEP    58 / 129 dSTEP    59 / 129 fSTEP    60 / 129 fSTEP    61 / 129 dSTEP    62 / 129 fSTEP    63 / 129 dSTEP    64 / 129 dSTEP    65 / 129 dSTEP    66 / 129 dSTEP    67 / 129 dSTEP    68 / 129 dSTEP    69 / 129 fSTEP    70 / 129 fSTEP    71 / 129 dSTEP    72 / 129 dSTEP    73 / 129 dSTEP    74 / 129 dSTEP    75 / 129 dSTEP    76 / 129 fSTEP    77 / 129 dSTEP    78 / 129 fSTEP    79 / 129 fSTEP    80 / 129 fSTEP    81 / 129 dSTEP    82 / 129 dSTEP    83 / 129 dSTEP    84 / 129 dSTEP    85 / 129 dSTEP    86 / 129 dSTEP    87 / 129 dSTEP    88 / 129 fSTEP    89 / 129 fSTEP    90 / 129 fSTEP    91 / 129 fSTEP    92 / 129 fSTEP    93 / 129 dSTEP    94 / 129 dSTEP    95 / 129 dSTEP    96 / 129 dSTEP    97 / 129 dSTEP    98 / 129 dSTEP    99 / 129 dSTEP   100 / 129 dSTEP   101 / 129 fSTEP   102 / 129 dSTEP   103 / 129 dSTEP   104 / 129 dSTEP   105 / 129 fSTEP   106 / 129 dSTEP   107 / 129 dSTEP   108 / 129 dSTEP   109 / 129 dSTEP   110 / 129 dSTEP   111 / 129 dSTEP   112 / 129 dSTEP   113 / 129 dSTEP   114 / 129 dSTEP   115 / 129 dSTEP   116 / 129 dSTEP   117 / 129 dSTEP   118 / 129 dSTEP   119 / 129 dSTEP   120 / 129 dSTEP   121 / 129 dSTEP   122 / 129 dSTEP   123 / 129 dSTEP   124 / 129 dSTEP   125 / 129 dSTEP   126 / 129 dSTEP   127 / 129 dSTEP   128 / 129 dSTEP   129 / 129 d
-done.
-
-Making a distance matrix from msa.. 
-    0 / 130  100 / 130
-done.
-
-Constructing a UPGMA tree (efffree=1) ... 
-    0 / 130   10 / 130   20 / 130   30 / 130   40 / 130   50 / 130   60 / 130   70 / 130   80 / 130   90 / 130  100 / 130  110 / 130  120 / 130
-done.
-
-Progressive alignment 2/2... 
-STEP     1 / 129 fSTEP     2 / 129 fSTEP     3 / 129 fSTEP     4 / 129 fSTEP     5 / 129 fSTEP     6 / 129 fSTEP     7 / 129 fSTEP     8 / 129 fSTEP     9 / 129 fSTEP    10 / 129 fSTEP    11 / 129 fSTEP    12 / 129 fSTEP    13 / 129 fSTEP    14 / 129 fSTEP    15 / 129 fSTEP    16 / 129 fSTEP    17 / 129 fSTEP    18 / 129 fSTEP    19 / 129 fSTEP    20 / 129 fSTEP    21 / 129 fSTEP    22 / 129 fSTEP    23 / 129 fSTEP    24 / 129 fSTEP    25 / 129 fSTEP    26 / 129 fSTEP    27 / 129 fSTEP    28 / 129 dSTEP    29 / 129 fSTEP    30 / 129 fSTEP    31 / 129 dSTEP    32 / 129 fSTEP    33 / 129 fSTEP    34 / 129 fSTEP    35 / 129 dSTEP    36 / 129 fSTEP    37 / 129 fSTEP    38 / 129 dSTEP    39 / 129 fSTEP    40 / 129 fSTEP    41 / 129 fSTEP    42 / 129 fSTEP    43 / 129 dSTEP    44 / 129 fSTEP    45 / 129 dSTEP    46 / 129 dSTEP    47 / 129 dSTEP    48 / 129 dSTEP    49 / 129 fSTEP    50 / 129 dSTEP    51 / 129 dSTEP    52 / 129 dSTEP    53 / 129 fSTEP    54 / 129 dSTEP    55 / 129 fSTEP    56 / 129 d
-Reallocating..done. *alloclen = 3315
-STEP    57 / 129 dSTEP    58 / 129 dSTEP    59 / 129 fSTEP    60 / 129 dSTEP    61 / 129 fSTEP    62 / 129 dSTEP    63 / 129 fSTEP    64 / 129 fSTEP    65 / 129 fSTEP    66 / 129 fSTEP    67 / 129 dSTEP    68 / 129 fSTEP    69 / 129 fSTEP    70 / 129 fSTEP    71 / 129 dSTEP    72 / 129 dSTEP    73 / 129 fSTEP    74 / 129 dSTEP    75 / 129 fSTEP    76 / 129 dSTEP    77 / 129 dSTEP    78 / 129 dSTEP    79 / 129 dSTEP    80 / 129 dSTEP    81 / 129 fSTEP    82 / 129 fSTEP    83 / 129 dSTEP    84 / 129 dSTEP    85 / 129 dSTEP    86 / 129 fSTEP    87 / 129 dSTEP    88 / 129 dSTEP    89 / 129 dSTEP    90 / 129 dSTEP    91 / 129 fSTEP    92 / 129 fSTEP    93 / 129 dSTEP    94 / 129 dSTEP    95 / 129 dSTEP    96 / 129 dSTEP    97 / 129 dSTEP    98 / 129 dSTEP    99 / 129 dSTEP   100 / 129 dSTEP   101 / 129 dSTEP   102 / 129 dSTEP   103 / 129 dSTEP   104 / 129 dSTEP   105 / 129 dSTEP   106 / 129 dSTEP   107 / 129 dSTEP   108 / 129 dSTEP   109 / 129 dSTEP   110 / 129 dSTEP   111 / 129 dSTEP   112 / 129 dSTEP   113 / 129 dSTEP   114 / 129 dSTEP   115 / 129 dSTEP   116 / 129 dSTEP   117 / 129 dSTEP   118 / 129 dSTEP   119 / 129 dSTEP   120 / 129 dSTEP   121 / 129 dSTEP   122 / 129 dSTEP   123 / 129 dSTEP   124 / 129 dSTEP   125 / 129 dSTEP   126 / 129 dSTEP   127 / 129 dSTEP   128 / 129 dSTEP   129 / 129 d
-done.
-
-disttbfast (aa) Version 7.313 alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
-0 thread(s)
-
-
-Strategy:
- FFT-NS-2 (Fast but rough)
- Progressive method (guide trees were built 2 times.)
-
-If unsure which option to use, try 'mafft --auto input > output'.
-For more information, see 'mafft --help', 'mafft --man' and the mafft page.
-
-The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
-It tends to insert more gaps into gap-rich regions than previous versions.
-To disable this change, add the --leavegappyregion option.
-
-rm: cannot remove `*model.gz': No such file or directory
-rm: cannot remove `*uniqueseq.phy': No such file or directory
