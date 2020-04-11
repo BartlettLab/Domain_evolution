@@ -1,0 +1,94 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c03b01>
+Subject: Job 715808: <search> in cluster <umghpcc> Done
+
+Job <search> was submitted from host <ghpcc06> by user <jm33a> in cluster <umghpcc> at Tue Dec 17 22:01:45 2019.
+Job was executed on host(s) <8*c03b01>, in queue <short>, as user <jm33a> in cluster <umghpcc> at Tue Dec 17 22:01:45 2019.
+</home/jm33a> was used as the home directory.
+</home/jm33a/domain_evolution/HAESA_search/round1> was used as the working directory.
+Started at Tue Dec 17 22:01:45 2019.
+Terminated at Wed Dec 18 01:43:48 2019.
+Results reported at Wed Dec 18 01:43:48 2019.
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -W 4:00             	# How much time does your job need (HH:MM)
+#BSUB -R rusage[mem=1500]	# How much memory
+#BSUB -R span[hosts=1]		# Keep on one CPU cluster
+#BSUB -n 8                	# Where X is in the set {1..X}
+#BSUB -J search     	# Job Name
+#BSUB -o out.%J           	# Append to output log file
+#BSUB -e err.%J           	# Append to error log file
+#BSUB -q short            	# Which queue to use {short, long, parallel, GPU, interactive}
+
+module load MAFFT/7.313
+module load hmmer/3.1b2
+module load blast/2.2.22
+
+
+
+<<COMMENT
+input_alignment=round1_HAESA_align.fasta
+
+#make hmm from alignment
+	hmmbuild -o hmmout.txt model.hmm $input_alignment
+
+#run hmm search
+	#search_databases=~/supertree/databases/primary_transcript_databases/*.oneline.fa #genomes from LRR_RLK paper
+	search_databases=/project/uma_madelaine_bartlett/JarrettMan/sequence_databases/1KP_seqs/seqs/*/*.prots.out #1 thousand transcriptomes
+	for i in $search_databases; do
+		hmmsearch -o hmmout.txt --noali --tblout table.output.txt model.hmm $i #scan all sequences from a species with the HMM file
+		#sed -n '4,8p' < table.output.txt | awk '{print $1}' >> tophits.txt # collect the IDs of the top 5 hits
+		top_hit=$(sed -n '4p' < table.output.txt | awk '{print $1}') #ID of best match
+		    j=${i##*/} #store j as the variable after the last '/', which returns the file name only
+		species_ID=$(echo $j | awk '{print substr($0,0,4)}') #only the first 4 characters of the file name, which is the species ID
+		gene_record_ID=">${species_ID}_${top_hit}" #concatenate the species ID and the geneID with an underscore between, using fasta format >
+	    #print the species/gene ID and sequence to the top hits list in fasta format
+	    	echo $gene_record_ID >> top_hits.seqs.fa #add gene species/gene ID to running list
+	    	grep -w -A 1 $top_hit $i | tail -n 1 >> top_hits.seqs.fa #add gene's sequence to running list
+	done
+
+
+
+echo "Building Pfam domain table from genes" 	##in case need to regenerate pfam searchable database: $ hmmpress Pfam-A.hmm top_hits.seqs.fa
+	hmmscan --noali -o pfamout.temp --cut_tc --tblout pfamout.tsv ~/pfam/hmmfiles/Pfam-A.hmm top_hits.seqs.fa
+	rm pfamout.temp
+echo "done"
+
+COMMENT
+
+##next step, use R to process this list to only genes with both domains, and only the gene IDs. output is both_domains_IDs.txt
+
+grep -w -A 1 -f both_domains_IDs.txt top_hits.seqs.fa > ../round2/both_domains_seqs.fa #pull only seqs from R screening, dumpt them in round 2 folder
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   25935.77 sec.
+    Max Memory :                                 703 MB
+    Average Memory :                             316.78 MB
+    Total Requested Memory :                     12000.00 MB
+    Delta Memory :                               11297.00 MB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                69
+    Run time :                                   13323 sec.
+    Turnaround time :                            13323 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <err.715808> for stderr output of this job.
+

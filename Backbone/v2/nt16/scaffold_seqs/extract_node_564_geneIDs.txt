@@ -1,0 +1,7 @@
+AT5G44700.1///
+Potri.003G156200.1///
+Potri.001G075000.1///
+Solyc05g007230.2.1///
+LOC_Os07g31500.1///
+Bradi1g26900.1.p///
+evm_27.model.AmTr_v1.0_scaffold00032.242///

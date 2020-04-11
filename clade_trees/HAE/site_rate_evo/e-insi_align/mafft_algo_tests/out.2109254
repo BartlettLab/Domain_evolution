@@ -1,0 +1,77 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c32b03>
+Subject: Job 2109254: <flanks> in cluster <umghpcc> Done
+
+Job <flanks> was submitted from host <ghpcc06> by user <jm33a> in cluster <umghpcc> at Wed Jan 29 10:00:43 2020.
+Job was executed on host(s) <16*c32b03>, in queue <long>, as user <jm33a> in cluster <umghpcc> at Wed Jan 29 10:00:44 2020.
+</home/jm33a> was used as the home directory.
+</home/jm33a/domain_evolution/1KT_searches/HAE/site_rate_evo/e-insi_align> was used as the working directory.
+Started at Wed Jan 29 10:00:44 2020.
+Terminated at Wed Jan 29 10:24:58 2020.
+Results reported at Wed Jan 29 10:24:58 2020.
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -W 48:00             	# How much time does your job need (HH:MM)
+#BSUB -q long            	# Which queue to use {short, long, parallel, GPU, interactive}
+#BSUB -R span[hosts=1]		# Keep on one CPU cluster
+#BSUB -R rusage[mem=1000]	# How much memory
+#BSUB -n 16                  # Where X is in the set {1..X}
+#BSUB -J flanks          	# Job Name
+#BSUB -o out.%J           	# Append to output log file
+#BSUB -e err.%J           	# Append to error log file
+
+
+module load noisy/1.5.12 
+module load iqtree/1.6.3
+module load MAFFT/7.313
+
+
+
+mafft --thread -10 *seqs.fa > default.align.fasta
+linsi --thread -10 *seqs.fa > linsi.align.fasta
+ginsi --thread -10 *seqs.fa > ginsi.align.fasta
+einsi --thread -10 *seqs.fa > einsi.align.fasta
+fftnsi --thread -10 *seqs.fa > fftnsi.align.fasta
+fftns --thread -10 *seqs.fa > fftns.align.fasta
+nwns --thread -10 *seqs.fa > nwns.align.fasta
+nwnsi --thread -10 *seqs.fa > nwsi.align.fasta
+exit
+
+
+
+#perform the site evolution rate test 
+#iqtree -s *align.fasta -t *.contree -wsr -nt 14 # if already have a tree can specify with the -t, otherwise it will infer a new one
+
+iqtree -s *align.fasta -wsr -nt 14
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   15109.20 sec.
+    Max Memory :                                 946 MB
+    Average Memory :                             472.00 MB
+    Total Requested Memory :                     16000.00 MB
+    Delta Memory :                               15054.00 MB
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                38
+    Run time :                                   1452 sec.
+    Turnaround time :                            1455 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <err.2109254> for stderr output of this job.
+

@@ -1,0 +1,1802 @@
+inferring tree...
+IQ-TREE multicore version 1.6.3 for Linux 64-bit built Mar 22 2018
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    c23b02 (AVX, FMA3, 504 GB RAM)
+Command: iqtree -s tree_alignment_out.fas -bb 1000 -nt 16 -m LG+F+R7
+Seed:    487341 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jan 16 20:50:56 2020
+Kernel:  AVX+FMA - 16 threads (64 CPU cores detected)
+
+Reading alignment file tree_alignment_out.fas ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 1561 sequences with 2250 columns, 2133 distinct patterns
+1748 parsimony-informative, 256 singleton sites, 246 constant sites
+                                          Gap/Ambiguity  Composition  p-value
+   1  URDJ_38212                                 56.67%    passed     39.89%
+   2  evm_27.model.AmTr_v1.0_scaffold00021.186   56.27%    passed     34.23%
+   3  PZRT_2184                                  57.47%    passed     10.25%
+   4  PZRT_2185                                  57.47%    passed     10.25%
+   5  KVAY_9724                                  76.89%    failed      2.35%
+   6  VZCI_14398                                 73.11%    passed     82.52%
+   7  KPUM_10914                                 56.58%    passed     97.08%
+   8  KPUM_10915                                 67.56%    passed     11.70%
+   9  SVQC_7183                                  83.42%    failed      1.28%
+  10  MZLD_127422                                75.33%    passed     10.23%
+  11  CKDK_17794                                 68.53%    passed     45.22%
+  12  GGJD_19944                                 75.96%    passed     41.93%
+  13  IWJG_15700                                 85.38%    failed      3.16%
+  14  PVGM_25438                                 57.64%    passed     69.55%
+  15  ECTD_112343                                69.11%    passed     43.14%
+  16  QKEI_55883                                 76.84%    passed     13.12%
+  17  XSZI_5502                                  57.51%    failed      0.11%
+  18  OPDF_38215                                 84.36%    failed      0.44%
+  19  LQJY_18823                                 56.40%    passed     94.44%
+  20  MKZR_27341                                 84.80%    failed      1.08%
+  21  GHLP_13357                                 56.49%    passed     92.14%
+  22  Solyc02g077630.2.1                         56.18%    passed     96.21%
+  23  UGJI_24060                                 78.67%    passed     34.68%
+  24  JNVS_52143                                 56.58%    passed     89.52%
+  25  AIOU_5640                                  75.11%    failed      3.40%
+  26  Solyc03g006300.1.1                         56.40%    passed     81.89%
+  27  EITK_22646                                 76.93%    passed     10.35%
+  28  DSUV_12942                                 59.78%    passed     37.65%
+  29  EITK_22647                                 76.80%    passed     15.23%
+  30  JCLQ_47015                                 56.53%    passed     91.77%
+  31  JGYZ_47323                                 56.31%    passed     97.15%
+  32  EDEQ_75662                                 71.29%    passed      8.64%
+  33  QZZU_8197                                  56.36%    passed     82.18%
+  34  VJSJ_28290                                 76.80%    passed     38.37%
+  35  DIHD_26105                                 56.71%    passed     98.82%
+  36  IPPG_14512                                 67.11%    passed     89.33%
+  37  ABEH_8052                                  76.49%    passed     38.74%
+  38  XKVX_8586                                  79.42%    failed      3.90%
+  39  SMUR_6001                                  68.27%    passed     88.79%
+  40  WEQK_12749                                 56.49%    passed     97.95%
+  41  AJFN_20786                                 64.71%    passed     45.70%
+  42  QJXB_12172                                 56.53%    passed     80.67%
+  43  GDZS_2672                                  66.31%    passed     61.39%
+  44  GDZS_2671                                  66.27%    passed     65.44%
+  45  GAKQ_8813                                  58.44%    passed     94.76%
+  46  RJNQ_17629                                 56.44%    passed     75.80%
+  47  GCFE_14691                                 58.36%    passed     95.70%
+  48  NXOH_12505                                 72.44%    passed      5.82%
+  49  MQIV_56751                                 57.60%    passed     98.13%
+  50  SLYR_22732                                 78.71%    passed      5.10%
+  51  TZNS_88899                                 56.84%    passed     66.86%
+  52  JETM_12165                                 70.49%    passed     18.53%
+  53  JQCX_14062                                 57.56%    failed      0.20%
+  54  OYLU_5278                                  56.98%    failed      0.42%
+  55  JQCX_14063                                 56.89%    failed      0.53%
+  56  FNEN_14907                                 72.31%    passed     94.66%
+  57  EDXZ_19739                                 70.89%    passed     78.20%
+  58  ASMV_23497                                 57.11%    passed     70.47%
+  59  SVTS_15706                                 87.24%    failed      1.10%
+  60  LWCK_11662                                 57.60%    passed     93.98%
+  61  Solyc07g053600.2.1                         56.76%    passed     94.90%
+  62  JNVS_11664                                 57.33%    passed     98.06%
+  63  GHLP_12626                                 69.64%    passed     43.83%
+  64  LQJY_17739                                 57.02%    passed     94.37%
+  65  OSMU_81308                                 62.22%    passed     66.10%
+  66  KGJF_89116                                 74.67%    passed     70.06%
+  67  DDRL_7398                                  70.09%    passed     67.97%
+  68  SILJ_83958                                 57.29%    passed     98.89%
+  69  BYQM_14341                                 70.98%    passed     45.14%
+  70  OAGK_13779                                 56.67%    passed     36.55%
+  71  JNKW_98261                                 56.80%    passed     58.04%
+  72  TVCU_54223                                 84.62%    passed     21.99%
+  73  AFQQ_3812                                  56.89%    passed     66.57%
+  74  KTAR_140755                                66.31%    passed     75.52%
+  75  GNRI_6450                                  58.13%    passed     89.37%
+  76  GNRI_6449                                  58.13%    passed     89.37%
+  77  OOSO_12374                                 71.20%    passed     77.50%
+  78  KPTE_3860                                  56.93%    passed     79.98%
+  79  SIBR_14869                                 58.71%    passed     45.42%
+  80  XXYA_16251                                 58.58%    passed     42.64%
+  81  RVGH_4308                                  71.91%    passed     53.06%
+  82  HQRJ_23862                                 56.67%    passed     65.59%
+  83  OMDH_67027                                 56.67%    passed     67.92%
+  84  WXNT_5275                                  70.76%    failed      0.01%
+  85  VXOD_50896                                 56.80%    passed     56.87%
+  86  TXMP_8076                                  69.69%    passed     63.57%
+  87  ZBVT_64916                                 56.84%    passed     78.34%
+  88  HBUQ_300                                   73.11%    passed     58.72%
+  89  HNCF_14152                                 56.71%    passed     70.38%
+  90  XWMS_2942                                  56.71%    passed     74.04%
+  91  LFII_9824                                  57.16%    passed     71.81%
+  92  BHYC_14220                                 56.71%    passed     56.13%
+  93  AEPI_12307                                 56.71%    passed     62.23%
+  94  MYVH_17480                                 72.40%    failed      2.49%
+  95  VPDX_1                                     66.80%    passed     51.78%
+  96  TVSH_18840                                 57.33%    passed     66.71%
+  97  JSAG_3850                                  57.02%    passed     39.31%
+  98  IUSR_4604                                  82.44%    failed      0.17%
+  99  SIBR_14868                                 58.80%    passed     51.68%
+ 100  OSHQ_11800                                 56.53%    passed     86.04%
+ 101  UMUL_87506                                 60.76%    passed     93.30%
+ 102  EDHN_11541                                 56.27%    passed     89.28%
+ 103  WHNV_47123                                 56.49%    passed     86.28%
+ 104  JEXA_16563                                 66.36%    passed     87.78%
+ 105  PUCW_12821                                 68.62%    passed     46.28%
+ 106  FAKD_3963                                  60.40%    passed     95.78%
+ 107  FAKD_3960                                  60.40%    passed     95.78%
+ 108  TTRG_22885                                 88.58%    failed      0.56%
+ 109  QDVW_15068                                 57.38%    passed     20.70%
+ 110  CMFF_10988                                 88.89%    failed      0.95%
+ 111  XMQO_18570                                 80.18%    failed      0.39%
+ 112  AUIP_29921                                 56.98%    passed     74.20%
+ 113  IUSR_4151                                  70.53%    passed     78.18%
+ 114  BTZX_20858                                 84.71%    failed      0.10%
+ 115  VUSY_289                                   64.84%    passed     29.89%
+ 116  VUSY_290                                   64.71%    passed     28.30%
+ 117  JLOV_1603                                  89.42%    failed      0.27%
+ 118  JTRM_14230                                 56.58%    passed     93.35%
+ 119  AUGV_54351                                 75.56%    passed     28.80%
+ 120  RPPC_73845                                 56.62%    passed     91.29%
+ 121  SMZF_1332                                  56.40%    passed     45.43%
+ 122  SMZF_1333                                  56.40%    passed     45.43%
+ 123  WMUK_984                                   57.02%    passed     78.88%
+ 124  QEHE_22232                                 65.42%    passed     95.19%
+ 125  SJAN_8784                                  69.20%    passed     76.85%
+ 126  EQYT_5784                                  70.58%    passed     85.92%
+ 127  JMJV_12249                                 57.33%    passed     76.55%
+ 128  IDAU_11639                                 57.56%    passed     74.96%
+ 129  DZLN_3318                                  75.82%    passed     69.59%
+ 130  MJHP_47130                                 57.24%    passed     66.77%
+ 131  KFAL_7565                                  62.31%    passed     77.55%
+ 132  MVTX_9895                                  72.89%    failed      4.42%
+ 133  QZBA_33                                    58.22%    passed     59.21%
+ 134  IORZ_2501                                  56.36%    passed     43.07%
+ 135  ZSNV_17133                                 56.31%    passed     38.38%
+ 136  TMWO_133150                                56.31%    passed     38.38%
+ 137  RRID_104337                                74.40%    failed      2.01%
+ 138  BMRX_32585                                 71.16%    failed      2.12%
+ 139  KKCW_8744                                  75.11%    failed      4.31%
+ 140  MIKW_15327                                 59.82%    passed     44.71%
+ 141  FPYZ_36171                                 56.62%    passed     35.91%
+ 142  KKCW_8745                                  74.58%    failed      1.87%
+ 143  OKEF_12803                                 56.49%    passed     85.23%
+ 144  XKPS_19863                                 74.22%    failed      2.94%
+ 145  EPRK_9643                                  71.24%    failed      4.24%
+ 146  TOKV_59922                                 57.16%    passed     54.73%
+ 147  SUFP_29024                                 75.96%    failed      0.39%
+ 148  BSEY_9888                                  56.67%    passed     68.14%
+ 149  FALI_21276                                 69.02%    passed     36.25%
+ 150  NMGG_5478                                  56.04%    passed     95.00%
+ 151  IXVJ_3694                                  75.64%    passed     21.04%
+ 152  AT4G28490.1                                56.36%    passed     84.90%
+ 153  SNNC_53819                                 57.82%    passed     90.05%
+ 154  NGRR_12308                                 56.93%    passed     56.69%
+ 155  EDHN_8924                                  56.98%    passed     37.12%
+ 156  KYAD_55204                                 57.16%    passed     15.33%
+ 157  RBYC_21809                                 57.56%    passed     55.49%
+ 158  XVJB_2756                                  57.20%    passed     18.08%
+ 159  EILE_43334                                 56.93%    passed     48.15%
+ 160  XHKT_6171                                  57.16%    passed     23.25%
+ 161  NUZN_12382                                 57.02%    passed     87.85%
+ 162  STDO_20565                                 61.07%    passed     76.60%
+ 163  BMRX_17038                                 57.87%    passed     62.53%
+ 164  TMWO_28089                                 60.36%    passed     74.10%
+ 165  IORZ_3660                                  56.98%    passed     65.17%
+ 166  MVTX_7735                                  56.98%    passed     66.90%
+ 167  ZSNV_14556                                 57.02%    passed     65.16%
+ 168  DSUV_593                                   64.40%    passed     97.16%
+ 169  NSPR_17885                                 84.27%    failed      0.01%
+ 170  YADI_12687                                 56.98%    passed     92.51%
+ 171  ERXG_9778                                  63.47%    passed     75.21%
+ 172  WYIG_3683                                  67.11%    passed     40.63%
+ 173  TIUZ_60347                                 57.07%    passed     64.81%
+ 174  YZVJ_5491                                  57.07%    passed     89.87%
+ 175  KRJP_18235                                 72.49%    passed      8.54%
+ 176  YGAT_4950                                  69.60%    passed     19.99%
+ 177  WZFE_197689                                56.89%    passed     72.97%
+ 178  CCID_19407                                 56.76%    passed     59.44%
+ 179  XMVD_13773                                 56.89%    passed     72.37%
+ 180  WUZV_3788                                  57.33%    passed     96.09%
+ 181  MVSE_32826                                 79.69%    failed      0.34%
+ 182  EDBB_8592                                  56.80%    passed     96.11%
+ 183  EDBB_8593                                  56.80%    passed     93.69%
+ 184  HUGU_17776                                 56.71%    passed     69.40%
+ 185  WHHY_12755                                 56.67%    passed     71.84%
+ 186  MBWM_20774                                 56.67%    passed     71.84%
+ 187  DZRA_93851                                 69.56%    passed     92.19%
+ 188  GQAV_97257                                 71.38%    passed     78.07%
+ 189  WEQK_69045                                 56.89%    passed     99.93%
+ 190  SART_56666                                 57.38%    passed     34.65%
+ 191  PLBZ_7055                                  56.00%    failed      0.12%
+ 192  MLPX_28395                                 83.82%    failed      0.00%
+ 193  AZBL_930                                   76.76%    passed     37.22%
+ 194  ZSAB_195128                                84.71%    failed      0.01%
+ 195  ODDO_19435                                 68.71%    passed     99.15%
+ 196  GETL_22493                                 67.42%    passed     68.54%
+ 197  KYNE_3648                                  58.84%    passed     12.70%
+ 198  YJUG_141509                                83.47%    failed      0.01%
+ 199  KVFU_9628                                  70.53%    passed     42.05%
+ 200  RDYY_70304                                 75.42%    passed     56.36%
+ 201  TAGM_9482                                  73.73%    passed     67.20%
+ 202  TEZA_17084                                 60.18%    passed     59.45%
+ 203  FDMM_26772                                 71.38%    passed     88.26%
+ 204  FGRF_15782                                 57.20%    passed     21.90%
+ 205  GJPF_13638                                 57.24%    failed      4.20%
+ 206  KBXS_86954                                 84.04%    failed      0.06%
+ 207  OCWZ_8943                                  56.93%    passed     30.04%
+ 208  PSHB_84617                                 88.13%    failed      4.07%
+ 209  PSJT_9103                                  56.49%    passed     34.54%
+ 210  YSRZ_9342                                  74.93%    passed     50.02%
+ 211  BNDE_27181                                 67.82%    passed     29.08%
+ 212  BNTL_28473                                 58.18%    passed     73.00%
+ 213  MWYQ_3219                                  84.36%    failed      0.02%
+ 214  LRTN_20714                                 56.71%    passed     35.95%
+ 215  IKFD_7131                                  57.20%    passed     88.72%
+ 216  QICX_32974                                 79.87%    passed      8.22%
+ 217  NNGU_12435                                 56.93%    passed     40.55%
+ 218  VFFP_12007                                 56.76%    passed     95.78%
+ 219  UHJR_11322                                 83.64%    failed      0.05%
+ 220  AJJE_15083                                 82.40%    failed      3.53%
+ 221  LOC_Os01g13800.1                           56.09%    failed      0.00%
+ 222  OQBM_2632                                  72.62%    passed     49.32%
+ 223  QSLH_3048                                  71.29%    passed     54.48%
+ 224  IZNU_5893                                  73.20%    passed     26.93%
+ 225  NHAG_5933                                  70.40%    passed     72.48%
+ 226  EMBR_15000                                 69.96%    passed     73.17%
+ 227  VXKB_17664                                 69.11%    passed     81.75%
+ 228  ALUC_3313                                  72.00%    passed     58.69%
+ 229  EHNF_22103                                 57.11%    passed     59.87%
+ 230  LOC_Os08g28870.1                           57.33%    failed      0.00%
+ 231  SHEZ_11691                                 78.84%    passed     59.46%
+ 232  XBKS_13929                                 58.04%    failed      0.00%
+ 233  WCOR_94020                                 57.24%    failed      0.00%
+ 234  HAEU_7511                                  56.49%    passed     63.41%
+ 235  UFQC_9449                                  73.51%    passed     77.22%
+ 236  JCLQ_11871                                 64.44%    passed     96.88%
+ 237  OBOJ_8489                                  60.84%    passed     71.82%
+ 238  SIIK_8761                                  68.49%    passed     84.80%
+ 239  GRRW_13547                                 64.00%    passed     98.78%
+ 240  UPOG_10302                                 75.16%    passed     19.89%
+ 241  GBVZ_17726                                 74.36%    failed      3.01%
+ 242  CZPV_9030                                  56.98%    passed     75.73%
+ 243  PKMO_14494                                 84.13%    failed      0.24%
+ 244  MYZV_7808                                  58.18%    passed     80.12%
+ 245  WOBD_84184                                 73.16%    passed     45.76%
+ 246  SIIK_86010                                 56.62%    passed     65.63%
+ 247  OBOJ_19659                                 56.67%    passed     81.75%
+ 248  REOF_104318                                56.62%    passed     80.20%
+ 249  GRRW_59022                                 56.58%    passed     86.24%
+ 250  JSZD_11794                                 72.67%    failed      0.41%
+ 251  FCCA_14120                                 66.00%    passed     69.68%
+ 252  UZWG_11071                                 56.84%    passed     49.62%
+ 253  DXQW_63334                                 57.29%    passed     95.62%
+ 254  PGKL_74800                                 57.29%    passed     88.65%
+ 255  HAEU_7855                                  57.02%    passed     73.75%
+ 256  LWDA_14606                                 56.93%    passed     71.94%
+ 257  CWZU_3183                                  70.09%    failed      0.65%
+ 258  QUTB_15978                                 56.71%    passed     89.10%
+ 259  DZTK_6821                                  77.60%    failed      1.34%
+ 260  UBLN_20474                                 56.31%    passed     43.34%
+ 261  BGZG_5712                                  69.64%    passed     59.98%
+ 262  QBGG_3391                                  82.76%    failed      0.00%
+ 263  OAGK_13912                                 56.49%    passed     23.56%
+ 264  QBGG_6334                                  81.47%    failed      0.02%
+ 265  AFQQ_15185                                 56.22%    passed     78.11%
+ 266  HXCD_13163                                 78.09%    failed      1.27%
+ 267  ZNZC_5170                                  76.36%    passed      9.62%
+ 268  EXHX_4167                                  72.89%    passed     19.58%
+ 269  UYED_13019                                 72.13%    passed      9.21%
+ 270  JZHZ_14378                                 76.49%    passed      5.42%
+ 271  CFRN_8574                                  78.22%    failed      1.07%
+ 272  NVSO_7264                                  77.20%    passed      5.44%
+ 273  JNKW_20369                                 56.27%    passed     67.64%
+ 274  DOVJ_3732                                  56.89%    passed     43.96%
+ 275  TEZA_16792                                 71.33%    failed      2.28%
+ 276  XRCX_13622                                 69.33%    failed      3.67%
+ 277  DESP_108145                                56.18%    passed     33.73%
+ 278  NUSE_67540                                 57.33%    passed     10.47%
+ 279  WSYE_66992                                 69.73%    failed      4.32%
+ 280  RKGT_4394                                  57.82%    failed      3.80%
+ 281  MYMP_10218                                 73.56%    passed     36.84%
+ 282  RKGT_4393                                  60.27%    passed      7.36%
+ 283  TVSH_18173                                 73.20%    passed      8.05%
+ 284  NJKC_11322                                 56.62%    passed      6.73%
+ 285  NJKC_11325                                 56.62%    passed      6.48%
+ 286  TUHA_18323                                 74.18%    failed      4.84%
+ 287  WKSU_19720                                 56.67%    passed     98.76%
+ 288  KWGC_12451                                 66.58%    passed     81.82%
+ 289  ZJUL_63484                                 71.33%    passed     89.08%
+ 290  UNPT_6177                                  79.64%    failed      1.64%
+ 291  NMGG_5145                                  56.58%    passed     85.67%
+ 292  AKRH_139977                                79.29%    failed      0.16%
+ 293  WBOD_23320                                 72.49%    passed      5.43%
+ 294  XQWC_4876                                  56.49%    passed     76.11%
+ 295  OBPL_9077                                  57.02%    passed     83.55%
+ 296  LXGM_31088                                 79.29%    failed      0.16%
+ 297  FPLR_28512                                 78.40%    failed      0.50%
+ 298  BCGB_2293                                  57.20%    passed     86.55%
+ 299  TJMB_133139                                75.91%    failed      2.82%
+ 300  SUAK_13500                                 56.31%    passed     95.31%
+ 301  RIDD_6248                                  84.58%    failed      0.04%
+ 302  NSPR_14047                                 83.96%    failed      0.00%
+ 303  CMCY_9749                                  69.87%    failed      0.01%
+ 304  CMCY_9748                                  69.91%    failed      0.04%
+ 305  BXBF_11084                                 87.11%    failed      2.09%
+ 306  ICNN_30521                                 68.89%    failed      0.04%
+ 307  LJQF_2224                                  87.69%    passed     13.96%
+ 308  CZJT_1134                                  62.49%    failed      4.61%
+ 309  SHEZ_11049                                 87.87%    passed      5.11%
+ 310  LTZF_17125                                 67.29%    failed      0.67%
+ 311  CNTZ_14                                    88.80%    failed      0.00%
+ 312  BXBF_12480                                 74.22%    failed      1.30%
+ 313  TVCU_10294                                 72.62%    failed      0.04%
+ 314  VWIP_281635                                93.47%    failed      0.00%
+ 315  SOHV_15391                                 68.58%    failed      0.00%
+ 316  JLOV_20175                                 94.04%    passed      5.05%
+ 317  GQAV_25303                                 69.33%    passed      7.49%
+ 318  RSPO_8538                                  83.38%    failed      0.03%
+ 319  KVAY_13157                                 81.82%    failed      2.33%
+ 320  BLAJ_23574                                 57.33%    failed      1.71%
+ 321  IQYY_7457                                  57.42%    passed      5.55%
+ 322  JDTY_4153                                  66.18%    passed     45.18%
+ 323  JDTY_4152                                  60.00%    failed      2.45%
+ 324  SJAN_9035                                  69.42%    passed     75.32%
+ 325  ZKPF_5319                                  82.67%    failed      0.04%
+ 326  FGRF_10520                                 56.76%    failed      1.36%
+ 327  JVBR_12345                                 57.33%    passed      6.03%
+ 328  VYLQ_53753                                 56.53%    passed     12.98%
+ 329  VYLQ_9700                                  58.36%    passed     79.87%
+ 330  SWGX_5672                                  58.76%    passed     85.94%
+ 331  QMUN_9248                                  74.49%    passed     50.84%
+ 332  LFQH_52080                                 71.69%    passed     83.06%
+ 333  CPLT_8929                                  83.87%    failed      0.00%
+ 334  IWIS_3684                                  56.27%    passed     83.71%
+ 335  GCYL_9163                                  71.38%    passed     94.96%
+ 336  DGXS_6927                                  57.51%    failed      2.57%
+ 337  IYDF_77698                                 72.80%    passed     72.73%
+ 338  TNWF_130833                                56.67%    failed      4.80%
+ 339  SILJ_20762                                 73.51%    passed     43.73%
+ 340  VVVV_8899                                  57.47%    failed      0.53%
+ 341  KNKV_16404                                 80.04%    failed      0.29%
+ 342  PSJT_1079                                  61.69%    passed     58.82%
+ 343  MVRF_13656                                 56.62%    passed      5.09%
+ 344  QTJY_62753                                 56.58%    passed     83.58%
+ 345  GBVZ_13958                                 69.38%    passed     24.76%
+ 346  VYGG_9973                                  88.40%    failed      2.28%
+ 347  HWUP_6490                                  57.11%    failed      1.39%
+ 348  HXJE_4421                                  73.20%    passed     26.25%
+ 349  PPQR_9189                                  56.67%    failed      1.44%
+ 350  HWUP_6491                                  56.93%    passed     23.95%
+ 351  LSKK_20837                                 74.22%    passed     56.98%
+ 352  UOEL_16582                                 57.02%    failed      1.87%
+ 353  UOEL_16580                                 56.67%    failed      3.14%
+ 354  AFLV_3523                                  57.24%    passed     12.65%
+ 355  AFLV_3522                                  57.24%    failed      2.75%
+ 356  VVVV_2667                                  58.09%    passed     22.15%
+ 357  DGXS_24562                                 56.44%    passed     12.90%
+ 358  UVDC_8001                                  70.76%    passed     17.00%
+ 359  CAIX_2206                                  85.56%    failed      0.05%
+ 360  RMVB_21298                                 84.31%    failed      0.00%
+ 361  TRLB_13043                                 78.44%    passed     64.24%
+ 362  MWYQ_3218                                  76.27%    passed     55.54%
+ 363  VTUS_5120                                  76.40%    passed     44.40%
+ 364  LELS_21222                                 57.02%    passed     37.78%
+ 365  XZME_14309                                 61.51%    failed      0.12%
+ 366  THDM_14938                                 72.80%    passed     90.67%
+ 367  MTHW_54772                                 57.11%    passed     13.24%
+ 368  MTHW_11108                                 57.20%    failed      3.65%
+ 369  XZME_14308                                 57.69%    passed      5.63%
+ 370  LELS_9909                                  56.93%    passed     28.88%
+ 371  VTUS_5119                                  73.73%    passed     88.19%
+ 372  PZAP_7125                                  55.60%    failed      0.00%
+ 373  EMJJ_114440                                57.69%    passed     16.32%
+ 374  JVBR_49684                                 71.11%    passed     43.99%
+ 375  SFCT_829                                   63.38%    failed      0.01%
+ 376  WXNT_55875                                 66.67%    failed      1.20%
+ 377  EMJJ_6197                                  58.13%    failed      0.49%
+ 378  PHCE_71892                                 68.98%    passed     96.48%
+ 379  IWMW_19654                                 76.49%    passed     34.31%
+ 380  PAWA_9807                                  56.71%    passed     36.15%
+ 381  IWMW_18559                                 66.09%    passed     69.56%
+ 382  EDEQ_14912                                 57.16%    passed     99.79%
+ 383  THDM_9581                                  74.53%    passed     39.80%
+ 384  XMVD_1483                                  56.49%    passed     95.88%
+ 385  HLJG_591                                   73.33%    passed     46.87%
+ 386  TPEM_27598                                 70.40%    passed     67.39%
+ 387  QDVW_64244                                 56.49%    passed     69.10%
+ 388  HLJG_593                                   73.33%    passed     30.77%
+ 389  FONV_13159                                 80.53%    failed      0.01%
+ 390  TZNS_2068                                  57.11%    passed     64.38%
+ 391  QURC_25538                                 75.96%    passed     20.59%
+ 392  CPKP_1657                                  56.53%    passed     85.76%
+ 393  TMMR_15794                                 80.13%    passed      7.44%
+ 394  LFQH_3618                                  56.36%    passed     77.21%
+ 395  KDCH_12877                                 71.91%    passed     56.04%
+ 396  DTOA_95586                                 56.40%    passed     70.20%
+ 397  ZJUL_9192                                  56.67%    passed     83.93%
+ 398  TOKV_59810                                 66.98%    passed     73.57%
+ 399  KWGC_10437                                 56.36%    passed     76.31%
+ 400  ODDO_19647                                 56.71%    passed     87.96%
+ 401  DAAD_8781                                  56.27%    passed     67.35%
+ 402  OPDF_5528                                  84.84%    failed      1.15%
+ 403  STKY_79092                                 63.47%    passed     13.73%
+ 404  XZAQ_7755                                  78.36%    passed     40.17%
+ 405  WPUV_6190                                  74.13%    passed     13.82%
+ 406  ONZG_11862                                 56.67%    passed     75.31%
+ 407  DSVQ_3666                                  79.96%    failed      2.58%
+ 408  AJBK_71290                                 76.44%    passed      9.81%
+ 409  KBRW_5314                                  68.18%    passed     72.62%
+ 410  DWAP_11838                                 65.11%    passed     81.54%
+ 411  HPNZ_48658                                 56.67%    passed     79.75%
+ 412  SEMK_47918                                 56.80%    passed     75.56%
+ 413  HKMQ_1519                                  70.58%    passed     65.00%
+ 414  EBPG_3310                                  56.89%    passed     66.76%
+ 415  ROLB_83858                                 56.80%    passed     68.96%
+ 416  MLUJ_13948                                 56.80%    passed     66.25%
+ 417  EXGW_9892                                  56.80%    passed     68.85%
+ 418  REZJ_47647                                 69.60%    passed     75.33%
+ 419  ICUS_14001                                 67.38%    passed     88.16%
+ 420  GVCB_48396                                 56.67%    passed     76.61%
+ 421  DZLN_980                                   56.67%    passed     78.33%
+ 422  IDAU_48332                                 56.80%    passed     68.96%
+ 423  MJHP_9226                                  56.80%    passed     71.12%
+ 424  HOOU_12258                                 56.98%    passed     73.02%
+ 425  GZUR_10932                                 56.98%    passed     69.50%
+ 426  CJGZ_14226                                 56.67%    passed     80.46%
+ 427  CHTD_8591                                  58.09%    passed     75.73%
+ 428  FDBS_47913                                 66.40%    passed     79.99%
+ 429  YHLF_5468                                  64.76%    passed     67.68%
+ 430  QBRF_11522                                 57.07%    passed     58.52%
+ 431  AQXA_49268                                 56.67%    passed     81.71%
+ 432  EWHG_3710                                  75.78%    passed     20.58%
+ 433  YIVZ_20222                                 56.71%    passed     57.21%
+ 434  FXJC_6119                                  56.71%    passed     65.25%
+ 435  KFAL_47949                                 56.71%    passed     61.22%
+ 436  IIFB_49416                                 56.71%    passed     51.06%
+ 437  JMJV_11338                                 56.71%    passed     47.78%
+ 438  TGOP_15168                                 56.71%    passed     58.67%
+ 439  ECSL_8527                                  64.84%    passed     82.66%
+ 440  JKNQ_14243                                 76.09%    passed     17.39%
+ 441  JYOB_11351                                 56.71%    passed     55.22%
+ 442  LACT_12305                                 56.71%    passed     56.20%
+ 443  NQWS_5277                                  77.51%    failed      3.37%
+ 444  RTTY_14931                                 68.27%    passed     64.13%
+ 445  EZXQ_41128                                 56.80%    passed     19.32%
+ 446  QSKP_9896                                  67.82%    passed     45.91%
+ 447  UPZX_6684                                  57.02%    passed     72.71%
+ 448  MBQU_14973                                 56.80%    passed     95.49%
+ 449  MFIN_54269                                 56.44%    passed     16.67%
+ 450  YMES_17519                                 58.27%    failed      0.02%
+ 451  VUIT_8283                                  70.84%    passed     70.55%
+ 452  UDUT_12604                                 70.27%    failed      4.12%
+ 453  VHZV_91670                                 70.22%    passed     14.19%
+ 454  RKFX_8650                                  72.98%    passed      5.54%
+ 455  PEZP_9841                                  73.56%    failed      0.76%
+ 456  TNWF_19106                                 57.56%    passed     12.37%
+ 457  BBBA_13682                                 79.24%    failed      3.35%
+ 458  SZPD_66620                                 57.02%    passed     71.77%
+ 459  NEBM_1176                                  57.60%    passed     55.78%
+ 460  LSKK_14723                                 82.27%    failed      0.00%
+ 461  SZPD_1886                                  68.93%    passed     83.46%
+ 462  EHNF_88229                                 58.13%    passed     47.72%
+ 463  LDME_14154                                 81.56%    passed     26.41%
+ 464  COBX_2922                                  57.60%    passed     38.38%
+ 465  HANM_72550                                 59.16%    passed     63.22%
+ 466  XMBA_4466                                  59.29%    passed     49.84%
+ 467  XRLM_3997                                  58.58%    passed     77.06%
+ 468  YKZB_8199                                  60.67%    passed     65.77%
+ 469  SVQC_10725                                 60.58%    passed     74.27%
+ 470  TORX_22364                                 57.60%    passed     69.36%
+ 471  ZRIN_14980                                 66.89%    passed     26.73%
+ 472  WEAC_10649                                 58.89%    passed     76.03%
+ 473  PHOQ_98589                                 57.51%    passed     40.89%
+ 474  CPOC_8034                                  58.44%    passed     69.50%
+ 475  HATH_19276                                 69.02%    passed     85.80%
+ 476  WCOR_16090                                 57.82%    passed     65.94%
+ 477  OMXG_13926                                 57.96%    passed     68.67%
+ 478  TIJL_12304                                 57.82%    passed     59.65%
+ 479  YXNR_16765                                 58.00%    passed     74.86%
+ 480  ZENX_17015                                 64.13%    passed     82.68%
+ 481  RCAH_20212                                 57.82%    passed     40.87%
+ 482  HGSM_13548                                 59.20%    passed     56.06%
+ 483  QEHE_13398                                 58.84%    passed     50.73%
+ 484  MKZR_27272                                 78.67%    passed      8.78%
+ 485  HUSX_9392                                  57.64%    passed     56.01%
+ 486  PPPZ_5470                                  57.33%    passed     66.55%
+ 487  PPPZ_5471                                  57.33%    passed     66.55%
+ 488  SXML_73008                                 57.29%    passed     78.47%
+ 489  DFYF_10208                                 58.13%    passed     68.82%
+ 490  FWBF_834                                   57.91%    passed     96.01%
+ 491  SBZH_132452                                57.73%    passed     87.43%
+ 492  QACK_18400                                 57.96%    passed     95.35%
+ 493  UQAZ_5613                                  58.53%    passed     10.32%
+ 494  RZSW_1706                                  66.71%    passed     31.01%
+ 495  HUQC_9410                                  59.73%    passed     23.23%
+ 496  RZSW_1705                                  66.71%    passed     29.52%
+ 497  RLCS_13926                                 59.29%    passed     13.66%
+ 498  QXWF_55763                                 59.11%    passed     29.36%
+ 499  KJBH_10347                                 58.89%    passed     34.59%
+ 500  GIWN_20933                                 64.53%    passed     93.00%
+ 501  BERS_66885                                 57.82%    passed     94.05%
+ 502  OPZX_793                                   57.91%    passed     84.51%
+ 503  GJNX_16169                                 57.87%    passed     95.66%
+ 504  DAYQ_58298                                 57.16%    passed     50.16%
+ 505  FYTP_5991                                  72.31%    passed     83.56%
+ 506  TMMR_19455                                 64.18%    passed     92.20%
+ 507  VPCP_9821                                  71.91%    passed     85.54%
+ 508  GCYL_49041                                 57.02%    passed     94.00%
+ 509  KDCH_67775                                 57.20%    passed     98.22%
+ 510  ZSSR_26778                                 58.27%    passed     66.25%
+ 511  FWCQ_47669                                 57.51%    passed     55.47%
+ 512  AJJE_15221                                 58.40%    passed     71.33%
+ 513  BOLZ_10716                                 58.09%    passed     44.10%
+ 514  DLAI_1836                                  62.58%    passed     60.02%
+ 515  YHFG_78423                                 61.60%    passed     89.77%
+ 516  ZUHO_26250                                 57.91%    passed     52.18%
+ 517  UDHA_98441                                 58.84%    passed     26.87%
+ 518  ACYX_12185                                 57.78%    passed     40.30%
+ 519  GMAM_2144                                  69.73%    passed     12.41%
+ 520  ABSS_15998                                 58.09%    passed     19.32%
+ 521  ABSS_15997                                 58.80%    passed     23.42%
+ 522  BCGB_1045                                  58.04%    passed     22.56%
+ 523  ULGV_78240                                 73.02%    passed     62.53%
+ 524  BYPY_3682                                  58.93%    passed     44.36%
+ 525  BYPY_3681                                  58.93%    passed     44.36%
+ 526  FZJL_18147                                 58.67%    passed     17.20%
+ 527  WTKZ_10280                                 68.62%    passed     63.17%
+ 528  PAWA_12572                                 59.07%    passed     15.99%
+ 529  QOXT_1541                                  58.80%    passed      8.01%
+ 530  QOXT_1539                                  58.89%    passed     10.85%
+ 531  AALA_2702                                  75.42%    passed     29.83%
+ 532  BDJQ_6748                                  58.27%    passed     47.24%
+ 533  BXAY_3157                                  57.87%    failed      1.74%
+ 534  XUAB_12434                                 57.64%    failed      3.56%
+ 535  TIJL_34618                                 57.64%    passed     26.90%
+ 536  OMXG_133332                                57.64%    passed     26.90%
+ 537  RCUX_19813                                 59.16%    passed     30.25%
+ 538  UZXL_393                                   59.56%    passed     21.23%
+ 539  UZXL_391                                   59.56%    passed     21.23%
+ 540  TCYS_95686                                 59.20%    passed     16.36%
+ 541  WBOD_3830                                  57.69%    failed      3.91%
+ 542  XQWC_164398                                59.02%    passed     16.61%
+ 543  BBBA_82346                                 79.60%    passed     45.13%
+ 544  KXSK_22835                                 57.64%    passed     15.14%
+ 545  GIOY_4229                                  84.22%    failed      0.02%
+ 546  OCWZ_2619                                  58.89%    failed      0.34%
+ 547  FWCQ_11944                                 58.13%    passed     40.48%
+ 548  JLLY_72684                                 97.78%    passed     86.72%
+ 549  FGDU_3020                                  58.67%    passed      7.90%
+ 550  DPFW_18286                                 74.93%    passed     37.45%
+ 551  DWZT_3134                                  88.27%    passed      9.79%
+ 552  QAIR_5264                                  78.22%    failed      0.04%
+ 553  LAPO_26338                                 83.38%    failed      3.38%
+ 554  MFEA_110363                                88.62%    failed      0.05%
+ 555  YSRZ_92215                                 57.33%    passed     76.24%
+ 556  QZZU_15980                                 57.87%    passed     91.56%
+ 557  THHD_14646                                 57.51%    passed     26.99%
+ 558  DCCI_10848                                 57.33%    failed      0.66%
+ 559  YZRI_11391                                 57.64%    failed      1.90%
+ 560  PMRP_10938                                 56.98%    passed     58.59%
+ 561  SFZX_11681                                 56.98%    passed     64.76%
+ 562  DGNP_1695                                  56.98%    passed     71.75%
+ 563  LMVB_6422                                  91.56%    failed      0.00%
+ 564  WKCY_536                                   57.42%    passed     14.93%
+ 565  KVFU_13036                                 57.60%    passed     44.89%
+ 566  NPND_9832                                  82.22%    passed     50.05%
+ 567  JROW_65009                                 73.64%    passed     80.48%
+ 568  QEBC_4600                                  57.56%    passed     88.14%
+ 569  NPND_9833                                  78.22%    passed     24.02%
+ 570  EAAA_65188                                 58.36%    passed     65.82%
+ 571  ZRIN_15014                                 74.89%    passed     83.80%
+ 572  GGJD_29556                                 63.33%    passed     22.99%
+ 573  NNGU_26450                                 64.13%    passed     63.96%
+ 574  INSP_8792                                  57.29%    passed     85.39%
+ 575  PCGJ_68490                                 63.38%    passed     93.86%
+ 576  MAQO_28579                                 57.60%    passed      8.79%
+ 577  GETL_1015                                  57.47%    passed     53.73%
+ 578  DHPO_19804                                 59.96%    passed      8.01%
+ 579  XSSD_18816                                 58.58%    failed      0.15%
+ 580  CUTE_62789                                 57.87%    failed      0.00%
+ 581  CPOC_5301                                  71.91%    passed     91.24%
+ 582  MUCT_9619                                  57.87%    passed      9.05%
+ 583  AKTA_9707                                  57.51%    failed      2.11%
+ 584  YHLF_5259                                  58.13%    passed     83.28%
+ 585  KBRW_7605                                  61.91%    passed     84.68%
+ 586  GZUR_8885                                  58.84%    passed     80.31%
+ 587  TAHF_12416                                 64.53%    passed     57.87%
+ 588  REZJ_47773                                 59.69%    passed     88.27%
+ 589  EBPG_43624                                 60.53%    passed     83.24%
+ 590  ROLB_11930                                 57.78%    passed     80.55%
+ 591  MLUJ_9235                                  58.27%    passed     76.21%
+ 592  AJBK_8350                                  57.78%    passed     80.55%
+ 593  HOOU_52304                                 59.56%    passed     85.62%
+ 594  ONZG_60353                                 57.82%    passed     83.48%
+ 595  HPNZ_11171                                 57.82%    passed     79.22%
+ 596  GVCB_9865                                  57.82%    passed     82.53%
+ 597  QBRF_10356                                 57.82%    passed     85.82%
+ 598  HKMQ_13147                                 59.73%    passed     80.42%
+ 599  AQXA_12126                                 59.73%    passed     88.16%
+ 600  SEMK_9511                                  58.27%    passed     91.45%
+ 601  EWHG_4609                                  57.96%    passed     93.20%
+ 602  CHTD_12669                                 65.60%    passed     80.65%
+ 603  ICUS_56879                                 59.56%    passed     88.80%
+ 604  TGOP_15060                                 57.96%    passed     86.36%
+ 605  LACT_11878                                 57.87%    passed     87.86%
+ 606  JYOB_5325                                  57.96%    passed     69.43%
+ 607  ECSL_9385                                  57.73%    passed     80.98%
+ 608  JKNQ_4970                                  58.13%    passed     80.07%
+ 609  YIVZ_15884                                 63.42%    passed     94.91%
+ 610  FXJC_49713                                 57.73%    passed     82.08%
+ 611  XSNO_13049                                 63.47%    passed     37.42%
+ 612  UASK_13404                                 67.82%    passed     96.47%
+ 613  XZPP_3796                                  58.22%    passed     79.44%
+ 614  FEDW_13727                                 57.60%    passed     61.73%
+ 615  JCMU_120119                                57.29%    passed     42.59%
+ 616  GIPR_10424                                 79.64%    passed     36.67%
+ 617  IZLO_5753                                  57.24%    passed     13.42%
+ 618  ATYL_33268                                 57.69%    passed     19.24%
+ 619  PHCE_20420                                 58.53%    passed     39.27%
+ 620  IYDF_18184                                 58.49%    passed      8.57%
+ 621  MZLD_29363                                 57.42%    passed     33.76%
+ 622  AXAF_2400                                  83.02%    failed      0.03%
+ 623  IHPC_3106                                  57.38%    passed     49.24%
+ 624  ERXG_14477                                 57.87%    passed     42.09%
+ 625  WVMY_1202                                  84.98%    failed      0.00%
+ 626  YHXT_58283                                 61.87%    passed     44.16%
+ 627  SMUR_16072                                 58.71%    passed     72.31%
+ 628  EAVM_4541                                  57.51%    passed     42.90%
+ 629  VCIN_15962                                 57.47%    passed     50.50%
+ 630  NCVK_9621                                  57.56%    passed     97.62%
+ 631  IANR_75766                                 58.18%    passed     70.01%
+ 632  IXVJ_30169                                 57.11%    passed     29.20%
+ 633  DDRL_16680                                 58.71%    passed     67.52%
+ 634  BMSE_142                                   57.82%    passed     14.07%
+ 635  EYKJ_14661                                 63.33%    passed     47.98%
+ 636  HRVY_10946                                 59.02%    passed     44.39%
+ 637  UQAZ_6888                                  57.96%    passed     48.62%
+ 638  DUNJ_23649                                 65.47%    passed     97.46%
+ 639  NUSE_10726                                 57.91%    passed     37.13%
+ 640  DOVJ_10402                                 58.36%    passed     65.89%
+ 641  HTDC_8775                                  85.64%    failed      0.00%
+ 642  SWGX_3569                                  57.16%    passed     41.43%
+ 643  GCFE_14813                                 57.78%    passed     37.87%
+ 644  VZCI_5923                                  61.96%    passed     57.31%
+ 645  CKDK_9140                                  57.82%    passed     41.49%
+ 646  EZXQ_8034                                  56.89%    passed     49.77%
+ 647  DKFZ_16902                                 57.87%    passed     77.09%
+ 648  DMLT_27376                                 57.42%    passed     27.89%
+ 649  FZJL_20155                                 65.07%    passed     51.55%
+ 650  UCNM_59735                                 57.56%    passed     75.73%
+ 651  OJCW_5445                                  58.44%    passed     24.35%
+ 652  OJCW_5446                                  57.51%    passed     29.27%
+ 653  DTOA_15953                                 57.51%    passed     31.54%
+ 654  XRLM_17733                                 57.38%    passed     22.04%
+ 655  ASMV_14481                                 57.60%    passed     63.89%
+ 656  DFYF_20854                                 57.38%    passed     73.64%
+ 657  SXML_15645                                 57.38%    passed     87.72%
+ 658  GIOY_3670                                  77.07%    failed      2.05%
+ 659  JOPH_15424                                 57.42%    passed     44.47%
+ 660  KTWL_17419                                 64.44%    passed     95.46%
+ 661  YADI_13675                                 57.60%    passed     81.49%
+ 662  WQRD_1666                                  57.51%    passed     95.41%
+ 663  OBPL_6632                                  57.51%    failed      2.44%
+ 664  GUMF_29005                                 59.02%    passed     23.10%
+ 665  CWLL_30997                                 68.93%    passed     64.44%
+ 666  XMBA_12885                                 59.60%    passed     54.11%
+ 667  RWKR_6878                                  64.04%    passed     80.21%
+ 668  HRVY_11891                                 59.42%    failed      2.93%
+ 669  KJBH_52675                                 58.93%    failed      4.52%
+ 670  IDGE_3203                                  69.78%    passed     69.28%
+ 671  CSWE_9910                                  68.44%    passed     79.13%
+ 672  CSWE_9911                                  68.44%    passed     82.39%
+ 673  XKVX_10572                                 70.53%    passed     73.07%
+ 674  DIHD_25707                                 60.49%    passed     90.22%
+ 675  HABV_6113                                  88.22%    passed     37.07%
+ 676  CRNC_2381                                  60.98%    passed     15.56%
+ 677  FNEN_9496                                  58.49%    passed     56.28%
+ 678  CFRN_3794                                  63.20%    passed     27.21%
+ 679  SFCT_18998                                 71.07%    passed     66.54%
+ 680  XZAQ_9919                                  65.82%    passed      6.77%
+ 681  UVQL_1397                                  74.71%    failed      3.40%
+ 682  BNTL_19205                                 58.04%    passed     40.98%
+ 683  SNBI_15088                                 72.36%    passed     24.07%
+ 684  LQUX_2776                                  57.69%    passed     80.36%
+ 685  HRUR_2436                                  65.02%    passed     65.59%
+ 686  OCTM_13567                                 73.02%    passed     19.45%
+ 687  AALA_11254                                 71.56%    passed     52.67%
+ 688  HJMP_19621                                 58.18%    passed     23.39%
+ 689  JETM_27248                                 57.87%    passed     97.57%
+ 690  ROAP_36361                                 92.80%    failed      3.28%
+ 691  CXSJ_3472                                  70.44%    failed      0.00%
+ 692  ATYL_34207                                 55.91%    passed     84.17%
+ 693  LTZF_2430                                  70.13%    passed     13.45%
+ 694  DDEV_120597                                55.51%    passed     25.24%
+ 695  AJFN_3071                                  54.89%    passed     55.31%
+ 696  MJAV_21570                                 54.36%    passed     84.80%
+ 697  OZJZ_25206                                 54.36%    passed     84.80%
+ 698  UWFU_6309                                  56.18%    passed     15.47%
+ 699  OOVX_9161                                  55.69%    passed     16.62%
+ 700  FXGI_55808                                 56.40%    passed     38.76%
+ 701  HUSX_55159                                 63.73%    passed     57.87%
+ 702  CYVA_14598                                 55.02%    passed     75.03%
+ 703  RMVB_7862                                  83.07%    failed      0.11%
+ 704  MXFG_18274                                 57.20%    failed      3.62%
+ 705  URZI_9140                                  55.82%    passed     24.17%
+ 706  QACK_15184                                 55.47%    passed     23.17%
+ 707  OSIP_10968                                 56.27%    passed     12.69%
+ 708  FGDU_62320                                 57.20%    passed     55.13%
+ 709  BRUD_11668                                 59.51%    passed     70.21%
+ 710  XFJG_2631                                  57.82%    passed     47.93%
+ 711  ACFP_33607                                 57.56%    passed     85.77%
+ 712  OGSY_29027                                 58.40%    passed     41.89%
+ 713  OLES_14313                                 55.16%    passed     17.01%
+ 714  TJES_3167                                  55.60%    passed     79.29%
+ 715  GIWN_9253                                  67.78%    passed     45.76%
+ 716  HURS_3009                                  56.76%    passed     11.22%
+ 717  OFWX_26563                                 56.71%    passed     62.55%
+ 718  QASA_131832                                67.91%    passed     91.75%
+ 719  FYSJ_11252                                 60.89%    passed     61.37%
+ 720  JSVC_3478                                  58.49%    passed     67.52%
+ 721  JSVC_3480                                  61.33%    passed     32.94%
+ 722  WTKZ_5253                                  80.58%    passed     37.85%
+ 723  HOKG_27519                                 56.53%    failed      2.40%
+ 724  MUMD_23318                                 56.76%    passed     14.94%
+ 725  GDKK_14597                                 57.60%    failed      0.04%
+ 726  OOSO_86650                                 57.16%    passed      5.75%
+ 727  ZGDS_18732                                 79.51%    failed      0.11%
+ 728  KYNE_1040                                  56.27%    passed     14.59%
+ 729  CIEA_55143                                 58.04%    failed      2.82%
+ 730  KBXS_16278                                 58.62%    failed      1.16%
+ 731  GJPF_7005                                  59.24%    failed      4.14%
+ 732  PWSG_4240                                  57.78%    passed     31.43%
+ 733  URDJ_3999                                  58.58%    passed     58.78%
+ 734  CTSS_2649                                  59.60%    failed      0.00%
+ 735  PRFO_13817                                 66.00%    passed     45.35%
+ 736  PRFO_13818                                 65.87%    passed     53.33%
+ 737  TKEK_11136                                 58.40%    passed      8.00%
+ 738  NIJU_4024                                  89.20%    failed      0.05%
+ 739  BSTR_2071                                  69.20%    failed      0.99%
+ 740  BSTR_2070                                  69.20%    failed      1.73%
+ 741  NJJO_4770                                  58.71%    failed      2.16%
+ 742  BLAJ_22692                                 58.22%    passed      7.24%
+ 743  KOFB_6675                                  57.64%    passed      8.93%
+ 744  MUNP_58912                                 62.22%    passed      6.53%
+ 745  QURC_7462                                  57.38%    passed     31.86%
+ 746  DSWR_7995                                  57.56%    passed     12.12%
+ 747  LMXP_9412                                  67.51%    passed     24.99%
+ 748  PKMO_15963                                 61.51%    failed      2.01%
+ 749  NQWS_4841                                  57.96%    passed      5.17%
+ 750  XZPP_4000                                  57.16%    passed      5.11%
+ 751  GBGW_13838                                 59.73%    passed     14.36%
+ 752  XMOG_3097                                  62.84%    passed      7.01%
+ 753  INQX_3754                                  57.07%    failed      4.15%
+ 754  GLVK_5737                                  57.07%    passed      7.76%
+ 755  LFOG_16094                                 57.07%    passed      5.18%
+ 756  OINM_1218                                  61.64%    passed      5.81%
+ 757  ATQZ_3010                                  56.93%    passed      8.37%
+ 758  KTWL_9015                                  57.20%    passed     10.11%
+ 759  QRNU_173695                                61.60%    failed      0.71%
+ 760  INQX_3755                                  62.58%    passed      8.91%
+ 761  MJAV_10924                                 57.82%    passed     18.04%
+ 762  CAIX_3048                                  61.38%    failed      0.97%
+ 763  VCCF_9889                                  57.07%    passed     16.07%
+ 764  AHRN_14733                                 59.02%    passed      6.96%
+ 765  FVXD_11945                                 69.29%    failed      0.94%
+ 766  SKNL_12782                                 57.82%    passed     20.24%
+ 767  WVMY_16164                                 84.27%    failed      0.30%
+ 768  TPUT_6006                                  71.73%    passed     50.31%
+ 769  MZOB_13480                                 52.09%    failed      2.18%
+ 770  JOIS_35564                                 86.71%    failed      0.44%
+ 771  PGKL_74820                                 52.09%    passed     15.93%
+ 772  VGHH_6890                                  52.18%    passed     59.11%
+ 773  LBZM_11257                                 54.18%    passed     11.82%
+ 774  PDXY_10485                                 54.18%    passed     11.82%
+ 775  LBZM_11256                                 51.96%    failed      4.37%
+ 776  BDIW_6509                                  52.00%    failed      1.27%
+ 777  PDXY_10484                                 51.96%    failed      4.37%
+ 778  GBCQ_24859                                 52.18%    failed      1.18%
+ 779  DDEV_24477                                 51.69%    failed      1.34%
+ 780  IFCJ_19403                                 51.69%    failed      2.11%
+ 781  FONV_12457                                 65.20%    passed     28.84%
+ 782  MMJI_1706                                  75.60%    passed     53.19%
+ 783  HUQC_14311                                 52.00%    passed      9.34%
+ 784  RSPO_331                                   51.38%    failed      0.03%
+ 785  XKPS_5985                                  51.96%    failed      0.00%
+ 786  PAZJ_11924                                 51.07%    failed      0.07%
+ 787  LFII_54300                                 51.33%    passed      7.64%
+ 788  PXYR_12987                                 57.69%    passed      6.90%
+ 789  IPUI_20712                                 67.78%    passed      5.92%
+ 790  VPDX_4661                                  55.11%    failed      0.00%
+ 791  IPUI_7761                                  60.89%    passed     29.33%
+ 792  CSSK_13518                                 61.73%    failed      0.18%
+ 793  GTSV_56331                                 71.42%    passed     52.60%
+ 794  JBGU_8084                                  66.62%    passed     36.82%
+ 795  HXDV_8613                                  63.60%    failed      0.21%
+ 796  DHAW_2660                                  61.38%    failed      2.85%
+ 797  DLAI_2267                                  66.67%    passed     64.73%
+ 798  QIEH_1815                                  61.07%    passed      8.77%
+ 799  DNQA_35991                                 91.87%    failed      0.00%
+ 800  XSZI_55095                                 52.22%    passed      9.22%
+ 801  KCPT_6362                                  51.11%    failed      2.75%
+ 802  ROEI_3358                                  52.04%    failed      1.53%
+ 803  NNOK_15990                                 52.09%    failed      1.39%
+ 804  XUAB_11351                                 52.09%    failed      0.22%
+ 805  ZMGN_21763                                 52.09%    failed      2.07%
+ 806  YXNR_134589                                55.56%    failed      1.01%
+ 807  JTRM_93983                                 52.22%    failed      1.02%
+ 808  BZMI_9493                                  57.20%    passed     14.78%
+ 809  GUMF_24629                                 52.13%    passed     54.81%
+ 810  WWQZ_24301                                 53.33%    failed      4.41%
+ 811  OVRB_2326                                  73.33%    passed     48.63%
+ 812  AHRN_22095                                 53.07%    passed     35.36%
+ 813  DHPO_9751                                  52.44%    passed      5.54%
+ 814  QAUE_29541                                 52.00%    passed      7.94%
+ 815  EPRK_7143                                  66.27%    passed     34.41%
+ 816  FNXH_29973                                 64.00%    passed     47.50%
+ 817  MLPX_23013                                 63.87%    passed     44.94%
+ 818  GMAM_24379                                 64.22%    passed     35.41%
+ 819  GAKQ_4109                                  52.13%    passed     11.53%
+ 820  EDXZ_11100                                 52.22%    passed      7.52%
+ 821  FYUH_28817                                 52.62%    passed     21.85%
+ 822  OUER_21735                                 61.91%    passed     94.70%
+ 823  ZETY_3807                                  56.93%    passed      8.61%
+ 824  VQFW_1796                                  56.27%    passed     41.83%
+ 825  UQCB_6561                                  59.11%    failed      1.33%
+ 826  OZJZ_2034                                  56.27%    passed     12.21%
+ 827  SUFP_110559                                58.71%    passed     76.90%
+ 828  NIGS_26596                                 58.58%    passed     40.71%
+ 829  NMDZ_17927                                 62.98%    passed     61.67%
+ 830  KNMB_7854                                  58.76%    failed      1.86%
+ 831  HXDV_11613                                 67.38%    passed      6.93%
+ 832  WVEF_12446                                 57.47%    passed     55.38%
+ 833  WVEF_12445                                 57.47%    passed     57.17%
+ 834  FPLR_16823                                 65.11%    passed     14.79%
+ 835  OINM_28253                                 69.60%    passed     13.67%
+ 836  MVSE_1690                                  69.20%    passed     15.05%
+ 837  ZPKK_4650                                  65.38%    passed     72.80%
+ 838  ROAP_2130                                  74.09%    passed     18.19%
+ 839  VUGF_60256                                 51.56%    failed      0.00%
+ 840  QNOC_6810                                  56.98%    failed      1.14%
+ 841  VPCP_11974                                 64.04%    passed      7.18%
+ 842  UZNH_18961                                 76.62%    failed      0.00%
+ 843  JLLY_9016                                  92.62%    failed      0.54%
+ 844  ECTD_29090                                 58.22%    failed      2.12%
+ 845  UZNH_24454                                 76.40%    failed      0.02%
+ 846  FYUH_112998                                58.49%    failed      2.19%
+ 847  XBKS_14374                                 55.96%    failed      0.01%
+ 848  ONBE_3373                                  62.84%    failed      0.02%
+ 849  THEW_2287                                  58.09%    failed      0.21%
+ 850  EMAL_88008                                 57.29%    passed      6.44%
+ 851  SZUO_3819                                  58.89%    failed      0.92%
+ 852  OVRB_23764                                 59.96%    failed      0.59%
+ 853  UNSW_6198                                  62.89%    passed     13.04%
+ 854  UNSW_6196                                  58.36%    passed     15.31%
+ 855  YPIC_11499                                 55.78%    failed      0.05%
+ 856  EMAL_19272                                 57.56%    failed      2.89%
+ 857  CMFF_4626                                  64.71%    failed      0.00%
+ 858  IADP_10651                                 63.42%    failed      0.00%
+ 859  IADP_10652                                 65.07%    failed      0.00%
+ 860  YPIC_28882                                 57.02%    failed      0.09%
+ 861  JBGU_8657                                  57.02%    failed      0.15%
+ 862  STDO_23478                                 52.36%    failed      0.26%
+ 863  NJJO_6139                                  51.91%    failed      0.39%
+ 864  NBMW_26182                                 55.07%    passed     14.36%
+ 865  GIPR_12712                                 75.82%    passed     57.04%
+ 866  ERWT_12200                                 52.67%    failed      0.00%
+ 867  HXJE_10460                                 58.89%    passed     14.79%
+ 868  OFWX_12931                                 54.13%    passed     27.49%
+ 869  ZGDS_11508                                 63.20%    passed     52.32%
+ 870  JOIS_35597                                 85.16%    passed     12.50%
+ 871  XONJ_47277                                 84.58%    failed      0.00%
+ 872  YLWW_6728                                  75.96%    failed      0.42%
+ 873  WGUG_16464                                 73.47%    failed      0.09%
+ 874  SVTS_1025                                  72.93%    failed      0.49%
+ 875  DYFF_24765                                 92.67%    failed      0.03%
+ 876  QGLJ_9800                                  84.22%    failed      0.00%
+ 877  DWZT_2405                                  84.40%    passed     33.92%
+ 878  QASA_13185                                 65.20%    failed      0.02%
+ 879  LMVB_39064                                 89.64%    passed     20.16%
+ 880  AEPI_53427                                 69.07%    passed     14.63%
+ 881  ZENX_7386                                  75.78%    failed      0.00%
+ 882  XONJ_48754                                 90.67%    failed      0.00%
+ 883  COCP_85825                                 75.33%    passed     50.97%
+ 884  KAYP_4707                                  70.18%    failed      0.01%
+ 885  NHIX_56644                                 84.18%    failed      2.82%
+ 886  QNIK_550                                   72.13%    passed     21.48%
+ 887  DNQA_4888                                  88.31%    failed      0.36%
+ 888  GFVW_6976                                  80.98%    passed     50.90%
+ 889  CGGO_16791                                 86.76%    failed      1.36%
+ 890  QAIR_4349                                  88.76%    passed      8.78%
+ 891  VWIP_277432                                95.07%    failed      3.74%
+ 892  CSSK_19825                                 68.44%    failed      0.00%
+ 893  DMKC_4434                                  86.58%    failed      0.00%
+ 894  GFVW_6977                                  80.98%    passed     50.90%
+ 895  MMJI_90123                                 73.64%    passed     95.35%
+ 896  DMKC_196                                   89.02%    passed     28.48%
+ 897  AYMT_11990                                 73.07%    failed      0.00%
+ 898  VUGF_13720                                 58.09%    passed     99.63%
+ 899  YMUO_58134                                 58.09%    passed     99.67%
+ 900  DYFF_23660                                 93.51%    failed      1.58%
+ 901  LOC_Os09g15700.1                           57.82%    failed      0.00%
+ 902  GDKK_73760                                 58.89%    failed      0.00%
+ 903  PZAP_65728                                 61.02%    failed      4.75%
+ 904  HZTS_8859                                  62.40%    passed     23.14%
+ 905  YBML_9297                                  71.56%    failed      0.00%
+ 906  JHUL_8147                                  56.98%    passed     42.06%
+ 907  NIGS_30125                                 78.89%    passed     47.03%
+ 908  IWJG_26746                                 58.13%    passed     42.69%
+ 909  JWEY_22199                                 68.31%    passed     64.49%
+ 910  VJSJ_27503                                 81.02%    passed     17.65%
+ 911  QZBA_24084                                 71.07%    failed      0.21%
+ 912  CNTZ_115                                   84.58%    failed      0.09%
+ 913  OQHZ_8147                                  71.91%    failed      0.03%
+ 914  DPFW_5427                                  78.22%    failed      0.01%
+ 915  NIJU_9129                                  86.98%    failed      0.01%
+ 916  JBND_73342                                 67.78%    failed      1.04%
+ 917  MFTM_14648                                 57.78%    passed     70.74%
+ 918  SZUO_5983                                  75.02%    passed     16.12%
+ 919  XHKT_5594                                  73.87%    failed      0.04%
+ 920  FCBJ_12945                                 82.00%    failed      0.15%
+ 921  IFCJ_13111                                 66.84%    passed     37.49%
+ 922  GEHT_59437                                 76.22%    passed     62.00%
+ 923  QIEH_10982                                 81.64%    failed      2.27%
+ 924  EILE_43317                                 56.49%    passed     88.13%
+ 925  MUNP_14032                                 67.20%    passed     13.70%
+ 926  OUER_26002                                 67.42%    passed     82.70%
+ 927  GSZA_6405                                  58.31%    passed      7.94%
+ 928  AXBO_9362                                  77.11%    passed     95.54%
+ 929  MIKW_19851                                 56.53%    passed      9.07%
+ 930  UGJI_729                                   70.89%    passed     79.69%
+ 931  TNVE_29155                                 63.38%    failed      4.47%
+ 932  MFEA_12143                                 87.20%    failed      0.45%
+ 933  OODC_22645                                 85.38%    failed      1.00%
+ 934  VKGP_20969                                 56.36%    passed     25.53%
+ 935  JAFJ_6180                                  56.84%    failed      2.06%
+ 936  JBND_13235                                 57.96%    passed     66.36%
+ 937  DRIL_4805                                  65.38%    passed     61.37%
+ 938  LVNW_18266                                 79.78%    failed      0.08%
+ 939  TTRG_22789                                 67.78%    passed     85.24%
+ 940  DHAW_132                                   58.13%    passed     31.09%
+ 941  SLYR_10199                                 70.13%    passed     21.61%
+ 942  CRNC_43654                                 55.96%    passed     61.40%
+ 943  KFZY_23824                                 75.51%    passed     19.20%
+ 944  EXHX_5531                                  58.58%    passed     77.96%
+ 945  NVSO_3228                                  56.00%    passed     55.34%
+ 946  QXWF_12191                                 55.56%    passed     40.29%
+ 947  JZHZ_12259                                 55.33%    passed     30.33%
+ 948  ZNZC_57366                                 55.73%    passed     49.72%
+ 949  UYED_13002                                 55.42%    passed     34.75%
+ 950  DSWR_69067                                 55.73%    passed     45.99%
+ 951  RLCS_54480                                 55.69%    passed     49.00%
+ 952  HXCD_12652                                 56.89%    passed     47.34%
+ 953  LMXP_12301                                 75.73%    passed     25.06%
+ 954  OTAN_10657                                 55.38%    passed     15.52%
+ 955  XMQO_13462                                 63.56%    passed      6.19%
+ 956  IIFB_4756                                  63.42%    passed     22.92%
+ 957  TAHF_3288                                  56.58%    passed      9.05%
+ 958  WPUV_448                                   56.44%    passed      9.92%
+ 959  GBGW_8462                                  66.49%    passed     29.41%
+ 960  YZGX_23641                                 56.31%    passed     67.36%
+ 961  ZHEE_1526                                  55.24%    passed     12.00%
+ 962  QKEI_11647                                 74.58%    passed     18.09%
+ 963  WBIB_10938                                 57.24%    passed     87.68%
+ 964  HRUR_8745                                  63.16%    passed     64.03%
+ 965  NXOH_7121                                  68.09%    passed     52.29%
+ 966  OAQS_237                                   55.82%    passed     18.53%
+ 967  JSZD_5822                                  55.47%    passed     39.65%
+ 968  WOBD_21512                                 55.07%    passed     37.46%
+ 969  SNBI_11316                                 55.60%    passed      6.31%
+ 970  QRNU_14438                                 55.60%    passed      8.45%
+ 971  LFOG_74143                                 62.00%    passed     39.53%
+ 972  TDTF_17171                                 62.00%    passed     33.72%
+ 973  KKDQ_19786                                 55.87%    passed     38.84%
+ 974  NTEO_6107                                  55.87%    passed      9.16%
+ 975  LWCK_2009                                  55.56%    passed     39.73%
+ 976  ZETY_12257                                 61.64%    passed     21.95%
+ 977  EQYT_11687                                 56.22%    passed     24.57%
+ 978  DSVQ_4274                                  66.36%    passed     50.28%
+ 979  EXGW_7324                                  55.91%    passed      9.48%
+ 980  DWAP_6820                                  57.16%    passed     23.63%
+ 981  CJGZ_8143                                  56.18%    passed     30.46%
+ 982  UASK_12810                                 62.53%    passed     10.49%
+ 983  ZPKK_35773                                 55.38%    passed      5.25%
+ 984  SXCE_3886                                  55.29%    passed      6.88%
+ 985  EAVM_16182                                 55.73%    passed      9.05%
+ 986  RJNQ_15919                                 67.29%    passed     41.73%
+ 987  BEFC_11024                                 58.27%    passed      8.67%
+ 988  SKNL_12556                                 56.40%    passed     84.99%
+ 989  PXYR_21834                                 67.60%    passed     32.65%
+ 990  AZBL_26706                                 65.02%    passed     76.54%
+ 991  QKMG_9412                                  55.60%    passed     33.61%
+ 992  AXPJ_5420                                  69.02%    passed      6.22%
+ 993  EIGQ_2328                                  74.27%    passed     10.40%
+ 994  EIGQ_2329                                  74.22%    passed     10.40%
+ 995  CQMG_41132                                 55.29%    passed     44.17%
+ 996  XOOE_1782                                  67.69%    passed     40.33%
+ 997  HENI_3963                                  55.47%    failed      2.14%
+ 998  FZQN_89689                                 55.69%    passed     64.92%
+ 999  BRUD_13487                                 55.38%    failed      4.06%
+1000  RXEN_5355                                  55.64%    passed     69.19%
+1001  EPVF_7816                                  55.60%    passed     16.12%
+1002  TRLB_9131                                  62.93%    failed      4.64%
+1003  SMMC_20335                                 61.24%    passed     93.65%
+1004  AQGE_12316                                 55.16%    passed     15.65%
+1005  OPZX_3735                                  55.64%    passed     16.95%
+1006  SWPE_9605                                  57.42%    passed     48.36%
+1007  ATFX_7419                                  55.51%    passed     23.08%
+1008  YGAT_7133                                  55.82%    passed     47.47%
+1009  IPPG_9965                                  55.42%    passed     22.68%
+1010  BPKH_13272                                 56.89%    failed      0.00%
+1011  MZOB_12132                                 55.24%    passed     12.67%
+1012  UOYN_43692                                 55.51%    failed      3.17%
+1013  TKEK_17967                                 56.62%    passed     22.01%
+1014  HGSM_71086                                 55.56%    failed      1.37%
+1015  VMNH_88447                                 73.07%    passed     33.23%
+1016  HOKG_28069                                 64.89%    passed     14.41%
+1017  KAYP_5461                                  78.44%    passed      5.51%
+1018  TAGM_2376                                  55.64%    failed      0.55%
+1019  PSHB_4964                                  64.62%    failed      3.89%
+1020  FUMQ_23273                                 56.76%    passed      8.71%
+1021  HBHB_36624                                 56.36%    passed     39.50%
+1022  CLMX_46662                                 55.42%    failed      3.04%
+1023  SLOI_4877                                  54.93%    failed      2.34%
+1024  CTSS_46655                                 54.76%    failed      1.58%
+1025  FCBJ_2458                                  69.64%    passed     19.36%
+1026  RBYC_1428                                  55.82%    passed      6.33%
+1027  MGVU_4346                                  56.53%    failed      3.91%
+1028  TZWR_11503                                 56.27%    passed     57.54%
+1029  LRRR_5885                                  55.73%    failed      2.68%
+1030  LRRR_5886                                  55.82%    failed      2.39%
+1031  BCAA_6289                                  55.47%    passed     22.57%
+1032  GRFT_10384                                 55.47%    failed      4.11%
+1033  RTNA_24422                                 55.47%    failed      1.96%
+1034  OWAS_4565                                  56.18%    passed     21.77%
+1035  OWAS_4564                                  56.76%    passed     21.64%
+1036  CWZU_10367                                 55.29%    failed      2.07%
+1037  HANM_13565                                 55.42%    passed     21.73%
+1038  ZHMB_8578                                  67.87%    passed     29.72%
+1039  HTDC_9178                                  90.76%    failed      2.54%
+1040  PCNH_13399                                 55.56%    failed      0.53%
+1041  UBLN_20457                                 55.60%    passed     14.89%
+1042  LUNL_14366                                 55.29%    passed      9.72%
+1043  WAXR_8231                                  56.40%    passed     26.70%
+1044  GBCQ_6695                                  55.64%    passed     24.05%
+1045  ADHK_9996                                  57.02%    passed     29.83%
+1046  UFHF_10601                                 55.38%    passed     13.61%
+1047  SERM_12018                                 55.69%    failed      2.09%
+1048  OXYP_5206                                  55.16%    failed      1.05%
+1049  VUIT_1032                                  57.16%    passed     35.86%
+1050  DBCE_995                                   62.04%    passed     46.52%
+1051  OYST_15379                                 55.64%    passed      9.81%
+1052  CSUV_1556                                  57.64%    passed     20.22%
+1053  CGGO_16936                                 86.80%    failed      0.02%
+1054  STKY_79218                                 60.27%    failed      0.65%
+1055  CXSJ_23861                                 67.47%    failed      0.08%
+1056  YLWW_14367                                 86.49%    failed      0.00%
+1057  NWMY_9911                                  73.20%    passed     63.42%
+1058  UDHA_21649                                 54.93%    passed     25.63%
+1059  FPYZ_3397                                  61.20%    passed     76.58%
+1060  WXVX_76176                                 55.56%    failed      1.80%
+1061  AVJK_7490                                  58.31%    failed      3.44%
+1062  AVJK_7489                                  58.36%    failed      4.75%
+1063  AWJM_15592                                 64.49%    failed      3.62%
+1064  BTZX_6840                                  72.93%    passed      5.74%
+1065  FXGI_55823                                 55.96%    passed     16.93%
+1066  DESP_10977                                 55.56%    failed      4.92%
+1067  AUGV_5390                                  55.11%    passed     39.79%
+1068  VGHH_7658                                  55.29%    passed     56.34%
+1069  JNUB_25477                                 58.44%    passed     18.05%
+1070  YHFG_10436                                 54.93%    failed      0.13%
+1071  TUHA_16550                                 56.84%    passed     43.55%
+1072  UNPT_4784                                  67.11%    passed     93.95%
+1073  IXEM_5917                                  59.60%    passed     52.67%
+1074  IXEM_5916                                  58.76%    passed     61.89%
+1075  XFJG_17332                                 58.62%    passed     68.71%
+1076  RQZP_26618                                 68.04%    passed     31.39%
+1077  QEBC_4599                                  56.71%    failed      1.78%
+1078  JROW_7876                                  85.38%    failed      0.07%
+1079  MFIN_4552                                  55.42%    passed     11.12%
+1080  YJUG_142119                                63.11%    passed     11.48%
+1081  YMES_84800                                 65.29%    passed     14.72%
+1082  JHUL_4520                                  59.11%    passed     68.97%
+1083  LVNW_18265                                 79.78%    failed      0.24%
+1084  RMWJ_4192                                  94.53%    failed      4.21%
+1085  OKEF_99134                                 67.91%    passed     95.28%
+1086  IPWB_2606                                  79.29%    failed      0.70%
+1087  TZWR_47192                                 56.49%    passed     81.18%
+1088  AT1G28440.1                                56.36%    passed     99.61%
+1089  IPWB_2608                                  77.47%    failed      1.62%
+1090  VMNH_15622                                 80.09%    failed      1.64%
+1091  LAPO_10565                                 88.62%    failed      2.04%
+1092  QSKP_5211                                  56.58%    passed     93.09%
+1093  MBQU_2375                                  69.51%    passed     38.81%
+1094  HABV_54859                                 93.29%    passed     12.35%
+1095  UPZX_2532                                  56.76%    passed     98.26%
+1096  JNUB_19626                                 56.93%    failed      1.94%
+1097  KRJP_19372                                 57.11%    failed      2.21%
+1098  BXAY_7793                                  55.47%    passed     11.73%
+1099  BPKH_5657                                  55.16%    passed      9.40%
+1100  RCAH_12701                                 55.16%    failed      1.98%
+1101  ZMGN_12964                                 54.71%    failed      0.06%
+1102  HATH_13476                                 66.80%    failed      0.06%
+1103  NNOK_69015                                 57.60%    passed     17.31%
+1104  WKSU_21100                                 64.49%    passed     94.83%
+1105  RIDD_8872                                  60.67%    passed     88.45%
+1106  PFSA_11266                                 60.98%    passed     87.65%
+1107  LQUX_17434                                 60.67%    passed     88.45%
+1108  PFSA_11265                                 60.67%    passed     87.16%
+1109  VLNB_12350                                 57.73%    passed     92.83%
+1110  VKGP_15111                                 65.91%    passed     95.22%
+1111  HTIP_3870                                  57.91%    passed     66.27%
+1112  XEUV_16026                                 58.67%    passed     24.28%
+1113  DMIN_1871                                  56.98%    passed     43.30%
+1114  DMIN_1872                                  56.98%    passed     43.30%
+1115  SART_56665                                 57.56%    passed     21.35%
+1116  LSJW_1910                                  57.24%    passed     28.93%
+1117  RCUX_4408                                  62.09%    passed     65.46%
+1118  DUNJ_4798                                  59.07%    passed     68.39%
+1119  DAAD_8799                                  58.18%    passed     10.68%
+1120  MAQO_119580                                57.91%    passed     12.17%
+1121  SOHV_85472                                 64.09%    failed      2.31%
+1122  AXAF_8332                                  86.67%    failed      2.84%
+1123  KFZY_15937                                 73.33%    passed     15.75%
+1124  KGJF_12880                                 68.80%    passed     60.10%
+1125  WSYE_12855                                 58.31%    passed     33.16%
+1126  XRCX_23261                                 57.91%    passed     19.05%
+1127  FAMO_25539                                 58.13%    passed     90.22%
+1128  XMOG_4337                                  58.67%    passed     77.10%
+1129  URZI_67776                                 58.67%    passed     77.96%
+1130  CWLL_152201                                70.58%    passed     73.92%
+1131  UMUL_87576                                 57.38%    passed     98.39%
+1132  VTOK_28600                                 58.18%    passed     60.51%
+1133  PHOQ_18302                                 58.22%    passed     60.26%
+1134  NHAG_13321                                 58.31%    passed     84.20%
+1135  FUMQ_2870                                  57.87%    passed     84.88%
+1136  BOLZ_10610                                 58.49%    passed      6.54%
+1137  OSMU_81320                                 63.69%    passed     55.44%
+1138  NMDZ_3316                                  63.16%    passed     21.71%
+1139  AIOU_71607                                 59.07%    passed     31.91%
+1140  GRFT_19626                                 57.47%    passed     33.50%
+1141  EJBY_45095                                 58.18%    passed     58.67%
+1142  COBX_72521                                 57.91%    passed     89.76%
+1143  BAHE_29761                                 58.58%    passed     36.34%
+1144  BJKT_67433                                 74.18%    passed     36.01%
+1145  MUMD_23328                                 58.31%    failed      2.33%
+1146  RUUB_13404                                 58.09%    passed     76.09%
+1147  BYNZ_4254                                  58.67%    passed     39.38%
+1148  BYNZ_4253                                  58.67%    passed     39.38%
+1149  CPLT_9433                                  58.58%    passed     42.80%
+1150  QMUN_3762                                  58.22%    passed     20.10%
+1151  CZJT_26989                                 58.58%    passed     24.43%
+1152  SMMC_16261                                 63.91%    passed     30.23%
+1153  DBCE_13386                                 62.62%    passed     14.57%
+1154  ENCD_7617                                  75.56%    passed     57.33%
+1155  ENCD_7616                                  75.56%    passed     61.72%
+1156  KNKV_13480                                 60.71%    passed     92.39%
+1157  CUVY_10545                                 75.47%    passed     87.26%
+1158  SYHW_54074                                 60.67%    passed     70.75%
+1159  CUVY_10547                                 75.47%    passed     85.85%
+1160  NWMY_10462                                 84.84%    failed      2.06%
+1161  OSHQ_49365                                 58.49%    passed     62.32%
+1162  WZFE_197705                                58.93%    passed     41.75%
+1163  YZVJ_52427                                 58.62%    passed     85.63%
+1164  UPOG_1033                                  58.44%    passed     23.14%
+1165  WFBF_7695                                  58.93%    passed     49.49%
+1166  MTII_8103                                  58.76%    passed     21.98%
+1167  AXPJ_6302                                  70.67%    passed     40.20%
+1168  RRID_17220                                 58.18%    passed     27.55%
+1169  ACYX_3549                                  66.18%    passed     78.37%
+1170  QTJY_62750                                 57.38%    passed     63.14%
+1171  CAQZ_18844                                 70.53%    failed      3.76%
+1172  OHAE_15622                                 69.96%    passed     40.65%
+1173  REOF_104329                                57.82%    passed     50.10%
+1174  UVQL_9556                                  80.49%    passed     13.09%
+1175  JSAG_11476                                 59.56%    failed      2.14%
+1176  VKOE_52557                                 70.53%    passed     81.21%
+1177  WGUG_7465                                  68.00%    passed     41.99%
+1178  DZTK_7439                                  67.38%    passed     92.72%
+1179  QKMG_100892                                58.89%    passed     93.45%
+1180  NTEO_15585                                 57.24%    passed     57.13%
+1181  SALZ_3167                                  57.24%    passed     69.00%
+1182  ATQZ_107471                                57.20%    passed     66.07%
+1183  OGSY_29781                                 58.18%    passed     70.81%
+1184  CVDF_678                                   57.73%    passed     56.36%
+1185  OQHZ_9277                                  57.82%    passed     30.67%
+1186  YKZB_6304                                  57.91%    passed     73.60%
+1187  ZHEE_7418                                  70.84%    passed     60.04%
+1188  ACFP_2332                                  57.38%    passed     64.44%
+1189  BGZG_3937                                  62.13%    passed     91.28%
+1190  VYGG_7913                                  72.93%    passed     48.13%
+1191  ALUC_6882                                  57.29%    passed     14.93%
+1192  QSLH_15505                                 57.60%    passed     75.96%
+1193  NJLF_4609                                  57.56%    passed     51.20%
+1194  IWIS_9050                                  57.87%    passed     69.61%
+1195  TPUT_10129                                 81.29%    passed     36.38%
+1196  UQCB_750                                   64.58%    passed     24.04%
+1197  XFFT_53306                                 57.64%    passed     68.63%
+1198  TJQY_57037                                 57.69%    passed     30.00%
+1199  DCCI_18367                                 58.00%    passed     56.44%
+1200  TQKZ_16237                                 57.60%    passed     27.72%
+1201  CWYJ_13905                                 58.00%    passed     19.83%
+1202  SBZH_132419                                67.64%    passed     63.62%
+1203  IDGE_8424                                  57.91%    passed     99.51%
+1204  JWEY_20255                                 67.20%    passed     91.28%
+1205  SIZE_14111                                 57.60%    passed     79.96%
+1206  COAQ_56210                                 57.56%    passed     76.74%
+1207  BNDE_13773                                 58.31%    passed     80.99%
+1208  SVVG_8788                                  57.69%    passed     26.44%
+1209  NHUA_410                                   58.09%    passed     12.18%
+1210  PAZJ_64273                                 65.69%    passed     66.26%
+1211  CUTE_13129                                 57.73%    passed      6.29%
+1212  DKFZ_469                                   57.91%    passed     17.55%
+1213  RNBN_9063                                  58.62%    passed     60.27%
+1214  PUDI_64455                                 58.09%    passed     54.99%
+1215  MRKX_18702                                 57.60%    passed     18.59%
+1216  BEFC_21267                                 57.73%    passed     50.03%
+1217  FFFY_7486                                  58.00%    passed     20.64%
+1218  FFFY_7485                                  57.38%    passed     19.97%
+1219  CAQZ_2913                                  58.22%    passed      8.78%
+1220  CLMX_8766                                  59.73%    passed     87.16%
+1221  CLNU_11482                                 57.24%    passed     83.72%
+1222  LSLA_58222                                 57.69%    passed     45.71%
+1223  LWDA_7982                                  59.20%    passed     98.90%
+1224  MYZV_13073                                 57.51%    passed     32.44%
+1225  LNER_6534                                  57.96%    passed     88.12%
+1226  CSUV_18203                                 57.69%    failed      3.67%
+1227  RXEN_17337                                 57.56%    passed     67.84%
+1228  GTSV_56221                                 82.89%    failed      0.07%
+1229  LJQF_10359                                 69.20%    passed      6.65%
+1230  OMDH_2218                                  58.76%    passed     91.75%
+1231  WQRD_11953                                 58.49%    passed     55.18%
+1232  YHXT_4911                                  57.64%    passed     60.70%
+1233  OTAN_15681                                 59.02%    passed     50.06%
+1234  JHCN_2994                                  63.64%    passed     40.32%
+1235  JHCN_2993                                  63.64%    passed     39.59%
+1236  PCNH_74097                                 61.91%    passed     85.75%
+1237  HTIP_11143                                 59.69%    passed     74.96%
+1238  UVDC_8122                                  57.69%    passed     21.01%
+1239  UFQC_13484                                 58.22%    passed     94.60%
+1240  UOYN_7858                                  64.31%    passed     91.24%
+1241  MGVU_9700                                  73.91%    passed     49.94%
+1242  CLNU_14445                                 58.53%    passed     78.58%
+1243  TPEM_29069                                 57.29%    passed     96.74%
+1244  XSNO_680                                   61.47%    passed     62.81%
+1245  FDBS_771                                   57.64%    passed     46.38%
+1246  FEDW_1120                                  58.04%    passed     30.63%
+1247  ABEH_17081                                 66.44%    passed     91.91%
+1248  MFTM_15664                                 59.20%    passed     29.60%
+1249  WWQZ_20683                                 58.22%    passed     98.31%
+1250  IHCQ_18591                                 63.20%    passed     80.65%
+1251  JEXA_15451                                 57.87%    passed     43.26%
+1252  PTFA_91813                                 63.69%    passed     86.20%
+1253  YZRI_15082                                 57.91%    passed     61.09%
+1254  ULGV_78393                                 65.64%    passed     67.65%
+1255  SLOI_40611                                 74.13%    passed     41.55%
+1256  CKKR_65474                                 56.67%    passed     59.58%
+1257  ZSSR_111057                                57.60%    passed     48.13%
+1258  AKRH_31844                                 70.44%    passed     79.81%
+1259  OAQS_27883                                 57.96%    passed     76.40%
+1260  TJMB_16484                                 63.24%    passed     93.51%
+1261  LXGM_27413                                 69.07%    passed     85.82%
+1262  PDIE_10752                                 58.62%    passed     23.66%
+1263  PUDI_64370                                 58.80%    passed     67.78%
+1264  AWJM_8998                                  58.80%    passed     84.22%
+1265  EAAA_9732                                  70.44%    passed     82.32%
+1266  WTDE_1819                                  64.84%    passed     95.20%
+1267  WTDE_1818                                  64.84%    passed     92.53%
+1268  CTYH_14311                                 64.22%    passed     82.86%
+1269  OHAE_22458                                 56.09%    passed     91.19%
+1270  HNCF_16374                                 70.27%    passed     78.95%
+1271  MYVH_11542                                 56.98%    passed     87.79%
+1272  XWMS_9234                                  56.27%    passed     95.83%
+1273  BHYC_13105                                 56.13%    passed     95.99%
+1274  XNLP_5510                                  58.31%    passed     97.63%
+1275  XNLP_5511                                  60.04%    passed     95.18%
+1276  RTTY_74258                                 56.49%    passed     91.04%
+1277  DMLT_26066                                 57.33%    passed     93.41%
+1278  RQZP_530                                   76.98%    passed     48.24%
+1279  BZMI_21025                                 56.53%    passed     63.18%
+1280  HURS_49366                                 56.53%    passed     65.37%
+1281  OODC_21626                                 91.20%    failed      1.89%
+1282  XOOE_29906                                 84.36%    failed      0.00%
+1283  DRIL_20520                                 69.11%    passed     24.66%
+1284  GLVK_9395                                  77.38%    failed      0.22%
+1285  UDUT_12480                                 66.67%    passed     50.32%
+1286  IEPQ_7312                                  56.80%    passed     99.53%
+1287  KKDQ_9767                                  57.02%    passed     99.79%
+1288  TDTF_13158                                 74.09%    failed      2.51%
+1289  IEPQ_7315                                  57.02%    passed     99.62%
+1290  FYSJ_11724                                 73.47%    passed     60.38%
+1291  UHJR_10729                                 90.09%    failed      1.44%
+1292  KTQI_13362                                 79.24%    failed      0.00%
+1293  QGLJ_14543                                 89.64%    failed      0.14%
+1294  KTQI_13363                                 79.24%    failed      0.00%
+1295  EYKJ_66854                                 70.00%    passed     19.49%
+1296  RKFX_48242                                 69.91%    passed     47.15%
+1297  LKKX_14355                                 56.62%    passed     69.15%
+1298  OLXF_12212                                 56.36%    passed     91.51%
+1299  OLXF_12211                                 56.80%    passed     85.98%
+1300  WYIG_25199                                 65.20%    passed     56.12%
+1301  AXBO_8494                                  86.93%    failed      0.00%
+1302  SFKQ_5570                                  65.38%    passed     74.44%
+1303  SFKQ_5571                                  65.38%    passed     74.44%
+1304  BJKT_7822                                  76.22%    passed      7.56%
+1305  RNBN_46055                                 56.36%    passed     63.96%
+1306  MRKX_7816                                  67.60%    passed     97.96%
+1307  CPKP_1658                                  57.38%    passed     96.90%
+1308  TJES_3406                                  56.84%    passed     91.77%
+1309  XEUV_5588                                  60.13%    passed      6.08%
+1310  IQYY_4758                                  65.33%    passed     44.41%
+1311  BDJQ_14430                                 69.16%    passed     94.83%
+1312  OYLU_20840                                 58.62%    passed     19.00%
+1313  LDME_3416                                  79.24%    passed     46.37%
+1314  ONBE_10752                                 77.24%    passed     47.10%
+1315  LKKX_14356                                 56.62%    passed     88.49%
+1316  PLBZ_7053                                  59.02%    passed     14.43%
+1317  YBML_7367                                  56.53%    passed     18.43%
+1318  LSJW_519                                   73.64%    passed     71.78%
+1319  KXSK_4579                                  56.80%    passed     25.48%
+1320  TCYS_625                                   83.73%    failed      0.02%
+1321  ICNN_32719                                 68.09%    failed      0.77%
+1322  MVRF_17807                                 57.96%    passed     11.83%
+1323  RDYY_12750                                 70.40%    passed     69.91%
+1324  LSLA_57996                                 67.11%    passed     87.07%
+1325  FCEL_14059                                 64.58%    passed     71.53%
+1326  DEMH_2559                                  73.07%    passed     32.26%
+1327  DEMH_2560                                  72.93%    passed     39.71%
+1328  RUUB_20971                                 56.36%    passed     64.94%
+1329  MEAH_10216                                 71.78%    passed     80.18%
+1330  HZTS_13255                                 83.69%    failed      0.01%
+1331  CVDF_4432                                  56.84%    passed     76.93%
+1332  VKOE_52424                                 75.51%    passed     17.26%
+1333  MEAH_10218                                 71.87%    passed     81.87%
+1334  OYST_3679                                  56.44%    passed     78.56%
+1335  LUNL_1582                                  56.44%    passed     78.56%
+1336  WPYJ_3926                                  55.38%    passed     94.74%
+1337  WPYJ_3925                                  55.38%    passed     94.74%
+1338  FVXD_59466                                 84.31%    failed      0.00%
+1339  BDIW_12126                                 56.62%    passed     96.26%
+1340  EPVF_46132                                 61.69%    passed     73.07%
+1341  MUCT_2852                                  56.53%    passed     93.04%
+1342  AKTA_9636                                  56.71%    passed     94.61%
+1343  YUOM_10384                                 56.98%    passed     73.78%
+1344  BERS_10811                                 78.49%    failed      0.35%
+1345  TNVE_27900                                 78.22%    failed      2.81%
+1346  EGOS_11001                                 56.49%    passed     92.13%
+1347  DVXD_14708                                 56.49%    passed     92.63%
+1348  EGOS_11000                                 56.44%    passed     84.67%
+1349  QNIK_23091                                 83.64%    failed      0.00%
+1350  OLES_16999                                 56.67%    passed     65.88%
+1351  FZQN_13871                                 56.62%    passed     15.85%
+1352  DVXD_74083                                 68.04%    passed     79.56%
+1353  DZRA_13995                                 68.13%    passed     95.64%
+1354  XSSD_85626                                 56.44%    passed     35.42%
+1355  GJNX_16351                                 78.44%    failed      0.67%
+1356  WHHY_13259                                 73.47%    passed     72.86%
+1357  MBWM_17009                                 56.53%    passed     98.26%
+1358  HUGU_16155                                 74.58%    passed     46.43%
+1359  JAFJ_13279                                 74.49%    passed      9.24%
+1360  NFXV_6375                                  72.31%    passed     25.29%
+1361  NFXV_6372                                  60.84%    passed     75.81%
+1362  SWOH_1544                                  72.89%    passed     13.68%
+1363  SWOH_1543                                  72.89%    passed     22.90%
+1364  IANR_75967                                 56.36%    passed     99.55%
+1365  QNOC_3670                                  86.80%    failed      0.00%
+1366  XFFT_9988                                  56.44%    passed     57.67%
+1367  SQCF_1119                                  56.31%    passed     54.90%
+1368  SQCF_1121                                  56.31%    passed     54.90%
+1369  TJQY_8477                                  56.80%    passed     51.29%
+1370  VCIN_3915                                  73.60%    failed      2.13%
+1371  SXCE_41415                                 56.49%    passed     72.10%
+1372  GOQJ_3095                                  61.20%    passed     68.60%
+1373  GOQJ_3096                                  60.13%    passed     51.08%
+1374  BFMT_12505                                 65.20%    passed     41.75%
+1375  BFMT_12506                                 66.27%    passed     63.71%
+1376  NCVK_47488                                 56.40%    passed     89.31%
+1377  BFJL_14129                                 57.11%    passed     83.23%
+1378  RKLL_16563                                 57.20%    passed     85.88%
+1379  PTFA_19872                                 68.67%    passed     45.09%
+1380  NHUA_78741                                 56.44%    passed     98.93%
+1381  UZWG_14302                                 56.44%    passed     99.24%
+1382  HENI_11888                                 56.53%    passed     96.69%
+1383  SVVG_1299                                  56.40%    passed     81.47%
+1384  RKLL_16562                                 56.76%    passed     99.60%
+1385  THEW_26872                                 87.47%    failed      0.96%
+1386  MYMP_10219                                 56.53%    passed     93.14%
+1387  HJMP_17779                                 57.24%    passed     92.65%
+1388  SUAK_13126                                 56.53%    passed     54.80%
+1389  VLNB_22603                                 56.36%    passed     83.70%
+1390  GEHT_12580                                 80.58%    failed      0.00%
+1391  VHZV_91926                                 56.58%    passed     66.59%
+1392  ZCDJ_11920                                 70.49%    passed     34.03%
+1393  RMWJ_54328                                 91.91%    failed      0.16%
+1394  MGBF_8666                                  56.36%    passed     90.50%
+1395  PEZP_9049                                  76.13%    failed      1.08%
+1396  INSP_8355                                  56.67%    passed     46.39%
+1397  QUTB_10128                                 56.36%    passed     89.29%
+1398  TJLC_58735                                 56.98%    passed     90.52%
+1399  BSEY_11771                                 57.02%    passed     97.45%
+1400  PTLU_9998                                  63.91%    passed      9.13%
+1401  PTLU_9997                                  64.89%    passed     20.98%
+1402  VQFW_9643                                  63.64%    passed     79.66%
+1403  XGFU_21143                                 56.93%    passed     28.47%
+1404  DGNP_168                                   56.71%    passed     62.78%
+1405  PMRP_6863                                  56.71%    passed     62.78%
+1406  SFZX_42655                                 56.71%    passed     60.40%
+1407  PDIE_8529                                  56.71%    passed     58.03%
+1408  QAUE_2405                                  63.87%    passed     95.54%
+1409  AQGE_9580                                  56.76%    passed     73.18%
+1410  KYAD_10926                                 64.84%    passed     28.48%
+1411  ZCDJ_4993                                  56.53%    passed     91.69%
+1412  MGBF_8384                                  56.53%    passed     97.50%
+1413  ATFX_8060                                  56.31%    passed     96.84%
+1414  VNMY_7317                                  56.80%    passed     87.74%
+1415  NUZN_11436                                 56.58%    passed     76.81%
+1416  FYTP_45585                                 80.76%    failed      0.23%
+1417  BFJL_196369                                56.62%    passed     89.93%
+1418  SYHW_12535                                 78.53%    failed      1.78%
+1419  PVGM_26575                                 56.58%    passed     89.67%
+1420  YMUO_57027                                 74.93%    passed     10.83%
+1421  UWFU_11269                                 65.33%    passed     59.54%
+1422  UFHF_17275                                 56.53%    passed     90.39%
+1423  ADHK_15212                                 56.53%    passed     90.89%
+1424  IHCQ_2883                                  78.67%    failed      0.36%
+1425  AUIP_30361                                 66.80%    passed     63.81%
+1426  WFBF_12073                                 56.58%    passed     65.20%
+1427  SERM_52406                                 72.31%    passed     17.45%
+1428  WXVX_75690                                 76.44%    failed      0.62%
+1429  DXQW_4272                                  61.78%    passed     58.12%
+1430  JOPH_55757                                 73.38%    failed      2.92%
+1431  NGRR_23457                                 56.62%    passed     95.33%
+1432  KPTE_68048                                 69.29%    passed     58.50%
+1433  JBYE_25823                                 56.49%    passed     98.74%
+1434  JBYE_25824                                 56.49%    passed     97.53%
+1435  CYVA_20961                                 65.07%    passed     96.38%
+1436  QJXB_12171                                 56.53%    passed     87.62%
+1437  SALZ_71659                                 56.53%    passed     92.34%
+1438  RVGH_5084                                  56.53%    passed     99.77%
+1439  CKKR_11008                                 66.40%    passed     79.08%
+1440  LRTN_4027                                  56.53%    passed     97.85%
+1441  TQKZ_15846                                 67.60%    passed     33.20%
+1442  IHPC_76799                                 56.71%    passed     94.72%
+1443  IZLO_356                                   56.58%    passed     92.68%
+1444  THHD_14591                                 56.49%    passed     76.65%
+1445  OSIP_3182                                  69.16%    passed     33.81%
+1446  YUOM_9947                                  56.31%    passed     90.98%
+1447  WMUK_9760                                  62.18%    passed     84.06%
+1448  WAXR_11122                                 56.44%    passed     78.68%
+1449  HBHB_19347                                 76.62%    passed     54.48%
+1450  VFFP_11641                                 55.87%    passed     75.60%
+1451  LNER_54253                                 56.71%    passed     80.98%
+1452  FCCA_11412                                 56.18%    passed     65.02%
+1453  BCAA_74769                                 56.31%    passed     59.01%
+1454  UAXP_10924                                 71.07%    passed     48.09%
+1455  IKFD_13498                                 56.49%    passed     86.82%
+1456  WQUF_1711                                  56.80%    passed     96.32%
+1457  VCCF_4074                                  72.49%    passed      5.45%
+1458  SDXI_10599                                 79.51%    failed      2.33%
+1459  ERWT_46057                                 56.49%    passed     99.61%
+1460  IZNU_46027                                 56.44%    passed     99.40%
+1461  VXKB_64477                                 71.60%    passed     32.98%
+1462  OQBM_17080                                 56.44%    passed     98.22%
+1463  EMBR_60091                                 56.44%    passed     98.90%
+1464  NAUM_3812                                  74.49%    passed     25.22%
+1465  SDXI_10600                                 79.47%    failed      2.53%
+1466  QICX_19050                                 79.91%    failed      0.50%
+1467  HYZL_1101                                  60.58%    passed     63.35%
+1468  NAUM_3813                                  74.53%    passed     31.12%
+1469  HYZL_1102                                  60.58%    passed     53.90%
+1470  GSZA_14472                                 77.56%    passed      5.37%
+1471  OBTI_9820                                  56.80%    passed     68.47%
+1472  OBTI_9821                                  56.04%    passed     71.08%
+1473  CZPV_8805                                  56.58%    passed     97.58%
+1474  VNMY_8172                                  56.53%    passed     80.89%
+1475  TIUZ_6661                                  56.27%    passed     75.17%
+1476  CQMG_41130                                 56.40%    passed     67.47%
+1477  RPPC_13427                                 56.67%    passed     99.96%
+1478  OOVX_9134                                  71.07%    passed     29.42%
+1479  CIAC_7626                                  67.38%    passed     72.64%
+1480  DAYQ_11063                                 56.31%    passed     88.84%
+1481  UHBY_5124                                  56.27%    passed     85.63%
+1482  UHBY_5125                                  56.27%    passed     85.63%
+1483  TJLC_14726                                 56.49%    passed     83.52%
+1484  CIAC_7629                                  67.78%    passed     63.55%
+1485  COAQ_56216                                 56.36%    passed     81.78%
+1486  FALI_8498                                  56.13%    passed     85.52%
+1487  LPGY_1960                                  56.04%    passed     87.33%
+1488  LPGY_1959                                  56.04%    passed     83.24%
+1489  HQRJ_21563                                 56.49%    passed     79.00%
+1490  JGYZ_1062                                  64.98%    passed     88.08%
+1491  ZKPF_5318                                  82.67%    failed      0.19%
+1492  ZBVT_8524                                  66.00%    passed     44.45%
+1493  HBUQ_2979                                  56.62%    passed     86.29%
+1494  XVJB_8686                                  56.62%    passed     58.94%
+1495  XPBC_2551                                  56.49%    passed     94.00%
+1496  XPBC_2550                                  56.58%    passed     93.83%
+1497  FNXH_9921                                  77.69%    failed      0.20%
+1498  OXYP_288                                   56.53%    passed     71.21%
+1499  FWBF_15931                                 77.33%    passed      6.67%
+1500  WQUF_1712                                  62.49%    passed      7.40%
+1501  NEBM_18082                                 56.84%    passed     36.51%
+1502  AYMT_117307                                83.51%    failed      0.00%
+1503  ZHMB_14917                                 57.91%    passed     58.93%
+1504  KOFB_79730                                 74.49%    passed     30.78%
+1505  BYQM_10460                                 56.44%    passed     98.93%
+1506  CCID_12502                                 74.00%    passed      6.78%
+1507  ZSAB_2479                                  72.31%    passed     40.46%
+1508  XGFU_9945                                  56.62%    passed     56.36%
+1509  COCP_3706                                  84.98%    failed      0.01%
+1510  KNMB_6357                                  77.20%    passed     31.55%
+1511  ROEI_23168                                 60.53%    passed     48.58%
+1512  NHIX_2286                                  91.29%    failed      1.75%
+1513  MTII_43805                                 56.27%    passed     32.88%
+1514  CIEA_9592                                  56.62%    passed      6.46%
+1515  PWSG_46350                                 56.53%    passed     81.70%
+1516  FCEL_16409                                 57.33%    failed      1.69%
+1517  WBIB_3086                                  56.44%    passed     71.70%
+1518  TORX_101787                                79.47%    failed      0.09%
+1519  PPQR_699                                   62.40%    failed      1.41%
+1520  CTYH_26458                                 78.13%    passed      9.92%
+1521  NJLF_1190                                  57.07%    passed     94.96%
+1522  FDMM_2363                                  75.64%    failed      3.19%
+1523  WHNV_47201                                 56.53%    passed     90.82%
+1524  PUCW_51851                                 56.89%    passed     88.28%
+1525  EQDA_13149                                 56.58%    passed     74.59%
+1526  EQDA_13150                                 56.44%    passed     89.22%
+1527  SWPE_9339                                  73.51%    passed     45.93%
+1528  WKCY_10646                                 57.24%    passed     62.86%
+1529  KCPT_23551                                 56.58%    passed     97.04%
+1530  VXOD_51030                                 56.13%    passed     61.91%
+1531  TXMP_6778                                  56.09%    passed     87.25%
+1532  RTNA_23212                                 66.53%    passed     86.76%
+1533  XXYA_10476                                 56.40%    passed     94.68%
+1534  DTNC_56712                                 56.98%    passed     95.01%
+1535  DTNC_10136                                 56.44%    passed     84.71%
+1536  YZGX_8597                                  56.44%    passed     98.07%
+1537  KTAR_26039                                 61.16%    passed     98.83%
+1538  UTQR_17997                                 72.00%    passed     29.08%
+1539  UTQR_7934                                  56.49%    passed     91.58%
+1540  BAHE_11511                                 68.93%    passed     51.86%
+1541  OCTM_26687                                 63.91%    failed      1.16%
+1542  SNNC_7025                                  68.27%    passed     61.17%
+1543  BMSE_64974                                 71.20%    failed      0.51%
+1544  MXFG_20737                                 56.71%    passed     87.41%
+1545  JCMU_19212                                 56.62%    passed     85.29%
+1546  VTOK_28693                                 56.71%    passed     97.23%
+1547  UCNM_59727                                 56.53%    passed     99.48%
+1548  FAMO_97395                                 56.71%    passed     95.79%
+1549  WUZV_65343                                 56.49%    passed     87.98%
+1550  ZUHO_11555                                 74.36%    passed     42.37%
+1551  PCGJ_16636                                 56.44%    passed     91.56%
+1552  MQIV_6317                                  64.36%    passed     86.66%
+1553  WEAC_83315                                 77.56%    passed      8.25%
+1554  AYIY_8494                                  68.04%    passed     92.98%
+1555  AYIY_8495                                  67.56%    passed     94.99%
+1556  NBMW_3840                                  71.73%    passed     58.62%
+1557  SIZE_17655                                 56.49%    passed     97.53%
+1558  CWYJ_17067                                 64.40%    passed     39.29%
+1559  EJBY_3948                                  77.29%    failed      2.92%
+1560  UAXP_11662                                 61.69%    passed     93.62%
+1561  RWKR_23506                                 83.51%    failed      0.03%
+WARNING: 1561 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                      63.69%  333 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: PZRT_2185 is identical to PZRT_2184 but kept for subsequent analysis
+NOTE: GNRI_6449 is identical to GNRI_6450 but kept for subsequent analysis
+NOTE: FAKD_3960 is identical to FAKD_3963 but kept for subsequent analysis
+NOTE: SMZF_1333 is identical to SMZF_1332 but kept for subsequent analysis
+NOTE: TMWO_133150 is identical to ZSNV_17133 but kept for subsequent analysis
+NOTE: MBWM_20774 is identical to WHHY_12755 but kept for subsequent analysis
+NOTE: LXGM_31088 is identical to AKRH_139977 but kept for subsequent analysis
+NOTE: IDAU_48332 is identical to ROLB_83858 but kept for subsequent analysis
+NOTE: PPPZ_5471 is identical to PPPZ_5470 but kept for subsequent analysis
+NOTE: BYPY_3681 is identical to BYPY_3682 but kept for subsequent analysis
+NOTE: OMXG_133332 is identical to TIJL_34618 but kept for subsequent analysis
+NOTE: UZXL_391 is identical to UZXL_393 but kept for subsequent analysis
+NOTE: AJBK_8350 is identical to ROLB_11930 but kept for subsequent analysis
+NOTE: OZJZ_25206 is identical to MJAV_21570 but kept for subsequent analysis
+NOTE: PDXY_10485 is identical to LBZM_11257 but kept for subsequent analysis
+NOTE: PDXY_10484 is identical to LBZM_11256 but kept for subsequent analysis
+NOTE: GFVW_6977 is identical to GFVW_6976 but kept for subsequent analysis
+NOTE: LQUX_17434 is identical to RIDD_8872 but kept for subsequent analysis
+NOTE: DMIN_1872 is identical to DMIN_1871 but kept for subsequent analysis
+NOTE: BYNZ_4253 is identical to BYNZ_4254 but kept for subsequent analysis
+NOTE: SFKQ_5571 is identical to SFKQ_5570 but kept for subsequent analysis
+NOTE: LUNL_1582 is identical to OYST_3679 but kept for subsequent analysis
+NOTE: WPYJ_3925 is identical to WPYJ_3926 but kept for subsequent analysis
+NOTE: SQCF_1121 is identical to SQCF_1119 but kept for subsequent analysis
+NOTE: PMRP_6863 is identical to DGNP_168 but kept for subsequent analysis
+NOTE: UHBY_5125 is identical to UHBY_5124 but kept for subsequent analysis
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 56.138 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 487341)...
+
+NOTE: 3647 MB RAM (3 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -882761.420
+2. Current log-likelihood: -855409.557
+3. Current log-likelihood: -854830.692
+4. Current log-likelihood: -854765.877
+5. Current log-likelihood: -854762.450
+Optimal log-likelihood: -854762.387
+Site proportion and rates:  (0.056,0.029) (0.093,0.134) (0.093,0.307) (0.164,0.531) (0.177,0.858) (0.173,1.299) (0.244,2.020)
+Parameters optimization took 5 rounds (400.609 sec)
+Computing ML distances based on estimated model parameters... 3440.597 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+28.721 seconds
+Log-likelihood of BIONJ tree: -881077.893
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 3063.477 second
+Computing log-likelihood of 98 initial trees ... 1791.964 seconds
+Current best score: -854762.387
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -853586.614
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -852979.165
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 6: -852970.539
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 10: -852916.765
+Iteration 10 / LogL: -852916.765 / Time: 2h:27m:9s
+Iteration 20 / LogL: -853015.048 / Time: 3h:7m:4s
+Finish initializing candidate tree set (20)
+Current best tree score: -852916.765 / CPU time: 10200.614
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -852860.665
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -852840.047
+Iteration 30 / LogL: -852914.585 / Time: 3h:50m:51s (12h:48m:46s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 32: -852831.581
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 33: -852772.877
+Iteration 40 / LogL: -852818.339 / Time: 5h:16m:42s (12h:32m:49s left)
+Iteration 50 / LogL: -853109.051 / Time: 6h:43m:42s (11h:22m:6s left)
+Log-likelihood cutoff on original alignment: -853131.713
+Iteration 60 / LogL: -852790.557 / Time: 7h:39m:55s (9h:27m:48s left)
+Iteration 70 / LogL: -852825.582 / Time: 8h:40m:58s (7h:54m:45s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 74: -852695.017
+Iteration 80 / LogL: -852752.532 / Time: 9h:50m:18s (11h:41m:11s left)
+Iteration 90 / LogL: -852808.440 / Time: 10h:53m:13s (10h:15m:34s left)
+Iteration 100 / LogL: -852794.943 / Time: 12h:18m:22s (9h:11m:9s left)
+Log-likelihood cutoff on original alignment: -853088.427
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.976
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -852763.624 / Time: 13h:36m:46s (11h:13m:33s left)
+Iteration 120 / LogL: -852786.326 / Time: 15h:17m:3s (10h:15m:50s left)
+Iteration 130 / LogL: -852780.848 / Time: 17h:14m:31s (9h:20m:49s left)
+Iteration 140 / LogL: -852750.749 / Time: 18h:58m:19s (8h:10m:55s left)
+Iteration 150 / LogL: -852762.016 / Time: 20h:5m:19s (6h:44m:7s left)
+Log-likelihood cutoff on original alignment: -853035.397
+Iteration 160 / LogL: -852699.565 / Time: 21h:18m:25s (5h:21m:21s left)
+Iteration 170 / LogL: -852970.336 / Time: 22h:49m:40s (4h:2m:57s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 172: -852687.111
+Iteration 180 / LogL: -852788.264 / Time: 24h:12m:58s (12h:26m:15s left)
+Iteration 190 / LogL: -852871.670 / Time: 25h:6m:20s (10h:53m:6s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 197: -852677.935
+Iteration 200 / LogL: -852789.696 / Time: 26h:55m:56s (13h:7m:10s left)
+Log-likelihood cutoff on original alignment: -853034.859
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.990
+Iteration 210 / LogL: -852774.146 / Time: 28h:23m:43s (12h:13m:13s left)
+Iteration 220 / LogL: -852755.591 / Time: 29h:58m:43s (10h:56m:41s left)
+Iteration 230 / LogL: -852870.896 / Time: 31h:32m:32s (9h:38m:11s left)
+Iteration 240 / LogL: -852730.178 / Time: 33h:9m:46s (8h:19m:16s left)
+Iteration 250 / LogL: -852853.201 / Time: 34h:55m:29s (7h:0m:34s left)
+Log-likelihood cutoff on original alignment: -853034.859
+Iteration 260 / LogL: -852753.265 / Time: 36h:47m:54s (5h:40m:49s left)
+Iteration 270 / LogL: -852757.069 / Time: 38h:36m:34s (4h:18m:14s left)
+Iteration 280 / LogL: -852758.082 / Time: 40h:31m:42s (2h:54m:14s left)
+Iteration 290 / LogL: -852847.758 / Time: 41h:31m:7s (1h:26m:9s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 295: -852668.996
+Iteration 300 / LogL: -852804.849 / Time: 42h:51m:17s (13h:36m:38s left)
+Log-likelihood cutoff on original alignment: -853034.859
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.989
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 310 / LogL: -852759.513 / Time: 44h:12m:38s (12h:52m:19s left)
+Iteration 320 / LogL: -852838.935 / Time: 45h:31m:43s (11h:24m:49s left)
+Iteration 330 / LogL: -853018.935 / Time: 46h:50m:22s (9h:57m:44s left)
+Iteration 340 / LogL: -852712.261 / Time: 47h:41m:9s (8h:26m:13s left)
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c23b02>
+Subject: Job 1142999: <search> in cluster <umghpcc> Exited
+
+Job <search> was submitted from host <ghpcc06> by user <jm33a> in cluster <umghpcc> at Thu Jan 16 20:50:49 2020.
+Job was executed on host(s) <17*c23b02>, in queue <long>, as user <jm33a> in cluster <umghpcc> at Thu Jan 16 20:50:51 2020.
+</home/jm33a> was used as the home directory.
+</home/jm33a/domain_evolution/1KT_searches> was used as the working directory.
+Started at Thu Jan 16 20:50:51 2020.
+Terminated at Sat Jan 18 20:51:01 2020.
+Results reported at Sat Jan 18 20:51:01 2020.
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -W 48:00             	# How much time does your job need (HH:MM)
+#BSUB -R rusage[mem=500]	# How much memory
+#BSUB -R span[hosts=1]		# Keep on one CPU cluster
+#BSUB -n 17                	# Where X is in the set {1..X}
+#BSUB -J search     	# Job Name
+#BSUB -o out.%J           	# Append to output log file
+#BSUB -e err.%J           	# Append to error log file
+#BSUB -q long            	# Which queue to use {short, long, parallel, GPU, interactive}
+
+module load MAFFT/7.313
+module load hmmer/3.1b2
+module load blast/2.2.22
+module load noisy/1.5.12
+module load iqtree/1.6.3
+
+<<COMMENT
+echo "building database to find priors..."
+    cat $(ls ~/supertree/databases/primary_transcript_databases/*.oneline.fa) > combined_onelines.fa
+    database=combined_onelines.fa
+echo "collecting prior sequences from database..."
+    grep -w -A 1 -f clade_input_IDs.txt --no-group-separator $database | awk '{print $1}' > input_seqs.fa #collect sequences of inputs
+echo "Aligning prior sequences..."
+    mafft input_seqs.fa > input_alignment.fasta #align sequences
+echo "building an HMM from the alignment..."
+    hmmbuild -o hmmout.txt model.hmm input_alignment.fasta #build HMM of clade
+
+
+echo "collect the top 2 hits for each of the species listed in flowering_plants_species_IDs"
+while read species_ID
+do
+    echo "Processing species $species_ID"
+    directory=$(find /project/uma_madelaine_bartlett/JarrettMan/sequence_databases/1KP_seqs/seqs -name "*$species_ID*" -type d) #find directory of the species
+    protein_database_path=$directory/*.prots.out #this is now the path to species' protein database
+   
+    test -f $protein_database_path #test if file exists. Write 0 to $? if yes, 1 if no
+    if [ $? -eq 0 ] #only perform the search when a database exists, otherwise report the error
+    then
+        hmmsearch -o hmmout.txt --noali --tblout table.output.txt model.hmm $protein_database_path #scan all sequences from a species with the HMM model
+    
+        #next collec the sequence of the top n hits found in the search
+        for hit_number in {4..5} #top hit is on line 4, specify how many lines after that
+        do
+            hit=$(sed -n "${hit_number}p" < table.output.txt | awk '{print $1}') #gene ID from hit number line
+            hit_full_ID=">${species_ID}_${hit}" #concatenate the species ID and the geneID with an underscore between, using fasta format >
+            echo $hit_full_ID >> top_hits.seqs.fa #add gene full gene ID to fasta sequences
+            grep -w -A 1 $hit $protein_database_path | tail -n 1 >> top_hits.seqs.fa #add gene's sequence to running list
+        done
+    else
+
+(... more ...)
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   2364318.00 sec.
+    Max Memory :                                 4723 MB
+    Average Memory :                             4608.58 MB
+    Total Requested Memory :                     8500.00 MB
+    Delta Memory :                               3777.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                20
+    Run time :                                   172810 sec.
+    Turnaround time :                            172812 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <err.1142999> for stderr output of this job.
+

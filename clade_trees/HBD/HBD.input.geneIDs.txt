@@ -1,0 +1,4 @@
+evm_27.model.AmTr_v1.0_scaffold00056.124
+AT5G25930.1
+Solyc08g066210.2.1
+LOC_Os05g44770.1
