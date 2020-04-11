@@ -1,1 +1,9 @@
 git push origin master
+
+git status # check on what needs updating
+
+#to add all modified files to the staging area
+git add .
+
+#to commit these:
+git commit
