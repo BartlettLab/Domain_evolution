@@ -26,11 +26,12 @@ module load R/3.6.1_packages/tidyverse/1.3.0 gcc/8.1.0
 #       The gene tree can then be used to find the clade and extract only genes
 #       that fall within the ratiation after divergence with the Amborella copy.
 ################################################################################
-#run as bsub < /home/jm33a/domain_evolution/1KP_initial_search_and_tree.sh
-#modification test
+#run as bsub < /home/jm33a/domain_evolution/scripts_and_resources/1KP_initial_search_and_tree.sh
+
 
 run="HAE"
 
+scripts_dir=/home/jm33a/domain_evolution/scripts_and_resources
 
 
 ##this section will take a list of genes, make an HMM, search all 1kt and n best hit collect sequences, then scan them for domain content
@@ -47,8 +48,8 @@ echo "make $run hmm from input alignment..."
 	rm hmmout.txt
 
 
-species_to_scan=$(wc -l <  /home/jm33a/domain_evolution/flowering_plants_species_IDs) #the number of flowering plant species handles from 1KT
-count=1#counter for progress
+species_to_scan=$(wc -l <  $scripts_dir/flowering_plants_species_IDs) #the number of flowering plant species handles from 1KT
+count=1 #counter for progress
 
 echo "collect the top 2 hits for each of the $species_to_scan species listed in flowering_plants_species_IDs"
 while read species_ID
@@ -74,7 +75,7 @@ do
         echo "$species_ID does not have a peptide database"
     fi
     count=`expr $count + 1` #add to count for progress report
-done < /home/jm33a/domain_evolution/flowering_plants_species_IDs #the input for flowering plant species handles from 1KT
+done < $scripts_dir/flowering_plants_species_IDs #the input for flowering plant species handles from 1KT
 
 #clean up a bit before proceeding
 rm hmmout.txt
@@ -92,7 +93,7 @@ echo "Building Pfam domain table from genes" 	##in case need to regenerate pfam 
 	hmmscan --noali -o pfamout.temp --cut_tc --tblout $run.pfamout.tsv ~/pfam/hmmfiles/Pfam-A.hmm $run.top_hits.seqs.fa 
 	rm pfamout.temp
 echo "use R script to process this list to only genes with both domains, and only the gene IDs. output is $run.both_domains_IDs.txt"
-    Rscript /home/jm33a/domain_evolution/sort_full_LRR_RLKs_olnly.R $run
+    Rscript $scripts_dir/sort_full_LRR_RLKs_olnly.R $run
 
 
 
@@ -101,7 +102,7 @@ fgrep -w --no-group-separator -A 1 -f $run.hits_with_both_domains_IDs.txt $run.t
 mkdir tree_from_hits
 cp $run.hits_with_both_domains_seqs.fa tree_from_hits
 cd tree_from_hits
-cat /home/jm33a/domain_evolution/scaffold_seqs.fa $run.hits_with_both_domains_seqs.fa >> $run.hits_and_scaffold_seqs.fa #add the backbone scaffold sequences to tree
+cat $scripts_dir/scaffold_seqs.fa $run.hits_with_both_domains_seqs.fa >> $run.hits_and_scaffold_seqs.fa #add the backbone scaffold sequences to tree
 
 mafft --thread 16 $run.hits_and_scaffold_seqs.fa > $run.hits_and_scaffold_align.fasta #quick version
 

@@ -24,10 +24,11 @@ module load R/3.6.1_packages/tidyverse/1.3.0 gcc/8.1.0
 #           and remake the tree.
 #       3.It will then collect the nucleotide sequences for the same genes
 ################################################################################
-#  run as: bsub < /home/jm33a/domain_evolution/1KP_followup_analyses.sh
+#  run as: bsub < /home/jm33a/domain_evolution/scripts_and_resources/1KP_followup_analyses.sh
 
 run="HAE"
 
+scripts_dir=/home/jm33a/domain_evolution/scripts_and_resources
 cd /home/jm33a/domain_evolution/clade_trees/$run/tree_from_hits
 mkdir refined_trees_and_alignments
 
@@ -37,7 +38,7 @@ mkdir refined_trees_and_alignments
 mkdir refined_trees_and_alignments/site_rates/
 echo "make $run clade tree to infer site rates"
 
-	target_length=$(grep -A1 $run $run.hits_and_scaffold_seqs.fa | tail -1 | wc -m) #get target seq length
+	target_length=$(grep -A1 AT.*_$run $run.hits_and_scaffold_seqs.fa | tail -1 | wc -m) #get target seq length
 	echo "$run sequence length is $target_length"
 	min_length=$(awk -v target_length="${target_length}" -v percent=".85" 'BEGIN{print (target_length*percent)}') #get 85% of that length
 echo "only genes longer than $min_length will be collected and used for analysis"
@@ -87,7 +88,7 @@ echo"collecting sequences..."
     fgrep -w --no-group-separator -A 1 -f refined_trees_and_alignments/full_tree_with_outgroups/$run.1kp_clade_geneIDs.txt $run.hits_and_scaffold_seqs.fa > refined_trees_and_alignments/full_tree_with_outgroups/$run.clade_all_seqs.fa #search in results for clade genes, extract those
     #move to folder and add scaffold sequences
     cd refined_trees_and_alignments/full_tree_with_outgroups/
-    cat /home/jm33a/domain_evolution/scaffold_seqs.fa >> $run.clade_all_seqs.fa #add the backbone scaffold sequences to tree
+    cat $scripts_dir/scaffold_seqs.fa >> $run.clade_all_seqs.fa #add the backbone scaffold sequences to tree
 
 echo "aligning $run clade sequences"
 	linsi --thread 16 $run.clade_all_seqs.fa > $run.clade_all_align.fasta 
@@ -126,7 +127,7 @@ grep -v "\." *geneIDs.txt > refined_trees_and_alignments/nucleotide_seqs/$run.1k
 cd refined_trees_and_alignments/nucleotide_seqs
 
 
-species_to_scan=$(wc -l <  /home/jm33a/domain_evolution/flowering_plants_species_IDs) #the number of flowering plant species handles from 1KT
+species_to_scan=$(wc -l <  $scripts_dir/flowering_plants_species_IDs) #the number of flowering plant species handles from 1KT
 count=1#counter for progress
 while read species_ID
 do
@@ -149,11 +150,11 @@ do
         echo "$species_ID does not have a nucleotide database"
     fi
     count=`expr $count + 1` #add to count for progress report
-done < /home/jm33a/domain_evolution/flowering_plants_species_IDs #the input for flowering plant species handles from 1KT
+done < $scripts_dir/flowering_plants_species_IDs #the input for flowering plant species handles from 1KT
 
 echo "adding $run scaffold sequences"
-    fgrep -A 1 -f /home/jm33a/domain_evolution/clade_trees/$run/*geneIDs.txt --no-group-separator /home/jm33a/domain_evolution/scaffold_CDS_seqs.fa | awk '{print $1}' >> $run.clade_1KP_nucleotides_seqs.fa # add scafold seqs from clade
-    fgrep -A 1 AT2G20850.1_SRF1_outgroup /home/jm33a/domain_evolution/scaffold_CDS_seqs.fa  >> $run.clade_1KP_nucleotides_seqs.fa # add AtSRF1 seq as outgroup
+    fgrep -A 1 -f /home/jm33a/domain_evolution/clade_trees/$run/*geneIDs.txt --no-group-separator $scripts_dir/scaffold_CDS_seqs.fa | awk '{print $1}' >> $run.clade_1KP_nucleotides_seqs.fa # add scafold seqs from clade
+    fgrep -A 1 AT2G20850.1_SRF1_outgroup $scripts_dir/scaffold_CDS_seqs.fa  >> $run.clade_1KP_nucleotides_seqs.fa # add AtSRF1 seq as outgroup
     
 
 echo "aligning $run clade sequences"

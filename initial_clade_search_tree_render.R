@@ -41,7 +41,7 @@ require(ggtree)
 
 
 run <- commandArgs(TRUE) #the name of the run should be passed from shell script
-#run <- "HBD"
+#run <- "HAE"
 setwd(paste("/home/jm33a/domain_evolution/clade_trees/", run, "/tree_from_hits/", sep = ""))
 
 tree <- read.tree(file = list.files(pattern = "*.treefile"))
@@ -52,16 +52,22 @@ tree <- root(tree, outgroup = outgroup, edgelabel = T, resolve.root = T) #root o
 
 
 #get the MRCA of the inputs - this is the target clade
+####NOT CURRENTLY WORKING< NOT SURE HOW TO FIX####
 target.clade.geneIDs <- readLines(paste("..", list.files(path = "../", pattern = 'geneIDs.txt'), sep = "/"))
+at_genes_with_names <- tree$tip.label[grep(tree$tip.label, pattern = "AT.G......._")]
+target.clade.geneIDs <- target.clade.geneIDs[grep(pattern = "AT", target.clade.geneIDs,invert = T)]   #remove Araibidopsis genes because of naming issue
 target_clade_node <- getMRCA(tree, target.clade.geneIDs)
+
+####FIGURE OUT BY PRINTING A TREE FIRsT####
+
+#target_clade_node <- 1533
 write.table(as.data.frame(extract.clade(tree, target_clade_node)["tip.label"]), file = paste(run,"extract_node",target_clade_node,"geneIDs.txt", sep = "_"), quote = F, row.names = F, col.names = F)
 
-quit(save = "no")
 
 
-#this section will print a tree that is readable
+#this section will print a tree that is Human readable
 #rename genes to include their clade
-sample_list <- read.csv(file = "/home/jm33a/1KT/1kP-Sample-List.csv", header = T) #make dataframe of the species codes and their taxonomic ranks
+sample_list <- read.csv(file = "/home/jm33a/domain_evolution/scripts_and_resources/1kP-Sample-List.csv", header = T) #make dataframe of the species codes and their taxonomic ranks
 sample_list <- sample_list[,1:4] #remove extra columns
 colnames(sample_list) <- c("1kp_sample", "Clade", "Family", "Species") #rename columns
 gene_in_tree <- unlist(tree$tip.label) #separate into list for replacement step
@@ -81,15 +87,15 @@ ggtree(tree, branch.length='none') +
   #geom_nodelab(aes(label = label),size = 2, vjust = .5, hjust = -.15) +
   scale_x_continuous(expand = expand_scale(mult = c(0, 2))) + 
   geom_rootedge(rootedge = 1) +
-  geom_tiplab(size=1.8, align=T)  + 
-  geom_hilight(node=target_clade_node)
+  geom_hilight(node=target_clade_node) + #remove this line for first round before you know the MRCA node
+  geom_tiplab(size=1.8, align=T)   
 
 ggtree::ggsave(plot = last_plot(), filename = paste(run, "intitial_search_tree.pdf", sep = "."), height = length(tree$tip.label)/11, limitsize = FALSE)
 
 
 
 
-
+#prints a tree with branch lengths, not very pretty yet.
 ggtree(tree) + 
   geom_nodelab(aes(label = node),size = 3, vjust = .75, hjust = -.15) +
   geom_nodelab(aes(label = label),size = 1, vjust = -.75, hjust = -.15) +
@@ -99,11 +105,5 @@ ggtree::ggsave(plot = last_plot(), filename = "Rplot.pdf", height = length(tree$
 ggtree::ggsave(plot = last_plot(), filename = paste(run, "Rplot.pdf", sep = "."), height = 11, limitsize = FALSE)
 
 
-
-
-
-extract_node=2533; write.table(as.data.frame(extract.clade(tree, extract_node)["tip.label"]), file = paste("extract_node",extract_node,"geneIDs.txt", sep = "_"), quote = F, row.names = F, col.names = F)
-
-write.table(as.data.frame(tree$tip.label), file = "cannonical_IDs.txt", quote = F, row.names = F, col.names = F)
 
 
