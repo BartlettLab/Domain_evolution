@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#BSUB -W 96:00             	# How much time does your job need (HH:MM)
-#BSUB -R rusage[mem=500]	# How much memory
-#BSUB -R span[hosts=1]		# Keep on one CPU cluster
-#BSUB -n 17                	# Where X is in the set {1..X}
-#BSUB -J refine         	# Job Name
-#BSUB -o out.%J           	# Append to output log file
-#BSUB -e err.%J           	# Append to error log file
-#BSUB -q long            	# Which queue to use {short, long, parallel, GPU, interactive}
+##BSUB -W 96:00             	# How much time does your job need (HH:MM)
+##BSUB -R rusage[mem=500]	# How much memory
+##BSUB -R span[hosts=1]		# Keep on one CPU cluster
+##BSUB -n 17                	# Where X is in the set {1..X}
+##BSUB -J refine         	# Job Name
+##BSUB -o out.%J           	# Append to output log file
+##BSUB -e err.%J           	# Append to error log file
+##BSUB -q long            	# Which queue to use {short, long, parallel, GPU, interactive}
 
 module load MAFFT/7.313
 module load hmmer/3.1b2
@@ -26,11 +26,12 @@ module load R/3.6.1_packages/tidyverse/1.3.0 gcc/8.1.0
 ################################################################################
 #  run as: bsub < /home/jm33a/domain_evolution/scripts_and_resources/1KP_followup_analyses.sh
 
-run="GSO"
+export run=${1} #this is the argument passed in from directing script
+echo "This will run follow-up analyses for $run clade"
 
 scripts_dir=/home/jm33a/domain_evolution/scripts_and_resources
 cd /home/jm33a/domain_evolution/clade_trees/$run/tree_from_hits
-mkdir refined_trees_and_alignments
+mkdir follow_up_analyses
 
 
 ######### 1. SITE RATES #########
@@ -38,13 +39,13 @@ echo "***************************************************************"
 echo "Step 1. Infer site-by-site rate of evolution for $run clade"
 echo "***************************************************************"
 
-mkdir refined_trees_and_alignments/site_rates/
+mkdir follow_up_analyses/site_rates/
 	target_length=$(grep -A1 AT.*_$run $run.hits_and_scaffold_seqs.fa | tail -1 | wc -m) #get target seq length
 	echo "$run sequence length is $target_length"
 	min_length=$(awk -v target_length="${target_length}" -v percent=".85" 'BEGIN{print (target_length*percent)}') #get 85% of that length
 echo "only genes longer than $min_length will be collected and used for analysis"
-	fgrep -w --no-group-separator -A 1 -f *geneIDs.txt $run.hits_and_scaffold_seqs.fa > refined_trees_and_alignments/site_rates/$run.clade_seqs.fa #search in results for clade genes, extract those
-	cd refined_trees_and_alignments/site_rates/
+	fgrep -w --no-group-separator -A 1 -f *geneIDs.txt $run.hits_and_scaffold_seqs.fa > follow_up_analyses/site_rates/$run.clade_seqs.fa #search in results for clade genes, extract those
+	cd follow_up_analyses/site_rates/
 echo "removing genes less than $min_length residues (85% of full length $run gene which is $target_length residues)"	
 	awk -v min_length="${min_length}" 'BEGIN {RS = ">" ; ORS = ""} length($2) >= min_length {print ">"$0}' $run.clade_seqs.fa > $run.full_length_clade_seqs.fa #collect only sequences that length or longer
 echo "$(grep ">" $run.full_length_clade_seqs.fa | wc -l) full length $run sequences were retained (out of $(grep ">" $run.clade_seqs.fa | wc -l) total $run 1KP sequences detected from initial search)" #report on how many sequences were too short
@@ -82,15 +83,15 @@ echo "***************************************************************"
 echo "Step 2. Infer full $run tree with outgroups from peptide sequences"
 echo "***************************************************************"
     cd /home/jm33a/domain_evolution/clade_trees/$run/tree_from_hits
-    mkdir refined_trees_and_alignments/full_tree_with_outgroups/
+    mkdir follow_up_analyses/full_tree_with_outgroups/
 
 echo"collecting sequences..."
     #remove scaffold genes from inputs list and store new input IDs file as the refined input gene IDs
-    grep -v "\." *geneIDs.txt > refined_trees_and_alignments/full_tree_with_outgroups/$run.1kp_clade_geneIDs.txt #scaffold genes all have a period (.), this line removes these genes
+    grep -v "\." *geneIDs.txt > follow_up_analyses/full_tree_with_outgroups/$run.1kp_clade_geneIDs.txt #scaffold genes all have a period (.), this line removes these genes
     #collect sequences of the 1KP genes in clade
-    fgrep -w --no-group-separator -A 1 -f refined_trees_and_alignments/full_tree_with_outgroups/$run.1kp_clade_geneIDs.txt $run.hits_and_scaffold_seqs.fa > refined_trees_and_alignments/full_tree_with_outgroups/$run.clade_all_seqs.fa #search in results for clade genes, extract those
+    fgrep -w --no-group-separator -A 1 -f follow_up_analyses/full_tree_with_outgroups/$run.1kp_clade_geneIDs.txt $run.hits_and_scaffold_seqs.fa > follow_up_analyses/full_tree_with_outgroups/$run.clade_all_seqs.fa #search in results for clade genes, extract those
     #move to folder and add scaffold sequences
-    cd refined_trees_and_alignments/full_tree_with_outgroups/
+    cd follow_up_analyses/full_tree_with_outgroups/
     cat $scripts_dir/scaffold_seqs.fa >> $run.clade_all_seqs.fa #add the backbone scaffold sequences to tree
 
 echo "aligning $run clade sequences"
@@ -126,13 +127,13 @@ echo "***************************************************************"
 echo "Step 3. Collect full-length nucleotide sequences of $run clade genes"
 echo "***************************************************************"
 cd /home/jm33a/domain_evolution/clade_trees/$run/tree_from_hits/
-mkdir refined_trees_and_alignments/nucleotide_seqs
+mkdir follow_up_analyses/nucleotide_seqs
 
 
-grep ">" refined_trees_and_alignments/site_rates/$run.full_length_clade_seqs.fa | grep -v "\." | cut -c 2- > refined_trees_and_alignments/nucleotide_seqs/$run.1kp_clade_geneIDs.txt #grab full length 1KP gene IDs from site rates analysis
+grep ">" follow_up_analyses/site_rates/$run.full_length_clade_seqs.fa | grep -v "\." | cut -c 2- > follow_up_analyses/nucleotide_seqs/$run.1kp_clade_geneIDs.txt #grab full length 1KP gene IDs from site rates analysis
 
 
-cd refined_trees_and_alignments/nucleotide_seqs
+cd follow_up_analyses/nucleotide_seqs
 
 
 species_to_scan=$(wc -l <  $scripts_dir/flowering_plants_species_IDs) #the number of flowering plant species handles from 1KT
