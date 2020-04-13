@@ -26,18 +26,19 @@ module load R/3.6.1_packages/tidyverse/1.3.0 gcc/8.1.0
 ################################################################################
 #  run as: bsub < /home/jm33a/domain_evolution/scripts_and_resources/1KP_followup_analyses.sh
 
-run="HAE"
+run="GSO"
 
 scripts_dir=/home/jm33a/domain_evolution/scripts_and_resources
 cd /home/jm33a/domain_evolution/clade_trees/$run/tree_from_hits
 mkdir refined_trees_and_alignments
 
 
-######### SITE RATES #########
+######### 1. SITE RATES #########
+echo "***************************************************************"
+echo "Step 1. Infer site-by-site rate of evolution for $run clade"
+echo "***************************************************************"
 
 mkdir refined_trees_and_alignments/site_rates/
-echo "make $run clade tree to infer site rates"
-
 	target_length=$(grep -A1 AT.*_$run $run.hits_and_scaffold_seqs.fa | tail -1 | wc -m) #get target seq length
 	echo "$run sequence length is $target_length"
 	min_length=$(awk -v target_length="${target_length}" -v percent=".85" 'BEGIN{print (target_length*percent)}') #get 85% of that length
@@ -46,8 +47,9 @@ echo "only genes longer than $min_length will be collected and used for analysis
 	cd refined_trees_and_alignments/site_rates/
 echo "removing genes less than $min_length residues (85% of full length $run gene which is $target_length residues)"	
 	awk -v min_length="${min_length}" 'BEGIN {RS = ">" ; ORS = ""} length($2) >= min_length {print ">"$0}' $run.clade_seqs.fa > $run.full_length_clade_seqs.fa #collect only sequences that length or longer
+echo "$(grep ">" $run.full_length_clade_seqs.fa | wc -l) full length $run sequences were retained (out of $(grep ">" $run.clade_seqs.fa | wc -l) total $run 1KP sequences detected from initial search)" #report on how many sequences were too short
 
-echo "aligning $run clade sequences"
+echo "aligning full-length $run clade sequences"
 	linsi --thread 16 $run.full_length_clade_seqs.fa > $run.full_length_clade_align.fasta 
 
 echo "running noisy to clean up alignment..."
@@ -75,9 +77,10 @@ echo "Finished with $run site rate tree and rate analysis."
 
 
 
-######### FULL TREE WITH OUTGROUPS #########
-
-echo "Beginning full tree with outgroups"
+######### 2. FULL TREE WITH OUTGROUPS #########
+echo "***************************************************************"
+echo "Step 2. Infer full $run tree with outgroups from peptide sequences"
+echo "***************************************************************"
     cd /home/jm33a/domain_evolution/clade_trees/$run/tree_from_hits
     mkdir refined_trees_and_alignments/full_tree_with_outgroups/
 
@@ -118,12 +121,17 @@ echo "Finished with $run full tree with outgroups"
 
 
 
-######### COLLECT NUCLEOTIDE SEQS #########
-
-echo "Next collect nucleotide sequences of $run clade genes"
+######### 3. COLLECT NUCLEOTIDE SEQS #########
+echo "***************************************************************"
+echo "Step 3. Collect full-length nucleotide sequences of $run clade genes"
+echo "***************************************************************"
 cd /home/jm33a/domain_evolution/clade_trees/$run/tree_from_hits/
 mkdir refined_trees_and_alignments/nucleotide_seqs
-grep -v "\." *geneIDs.txt > refined_trees_and_alignments/nucleotide_seqs/$run.1kp_clade_geneIDs.txt
+
+
+grep ">" refined_trees_and_alignments/site_rates/$run.full_length_clade_seqs.fa | grep -v "\." | cut -c 2- > refined_trees_and_alignments/nucleotide_seqs/$run.1kp_clade_geneIDs.txt #grab full length 1KP gene IDs from site rates analysis
+
+
 cd refined_trees_and_alignments/nucleotide_seqs
 
 
@@ -154,7 +162,7 @@ done < $scripts_dir/flowering_plants_species_IDs #the input for flowering plant 
 
 echo "adding $run scaffold sequences"
     fgrep -A 1 -f /home/jm33a/domain_evolution/clade_trees/$run/*geneIDs.txt --no-group-separator $scripts_dir/scaffold_CDS_seqs.fa | awk '{print $1}' >> $run.clade_1KP_nucleotides_seqs.fa # add scafold seqs from clade
-    fgrep -A 1 AT2G20850.1_SRF1_outgroup $scripts_dir/scaffold_CDS_seqs.fa  >> $run.clade_1KP_nucleotides_seqs.fa # add AtSRF1 seq as outgroup
+    fgrep -A 1 outgroup $scripts_dir/scaffold_CDS_seqs.fa  >> $run.clade_1KP_nucleotides_seqs.fa # add outgroup to polarize
     
 
 echo "aligning $run clade sequences"

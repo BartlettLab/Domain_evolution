@@ -29,7 +29,7 @@ module load R/3.6.1_packages/tidyverse/1.3.0 gcc/8.1.0
 #run as bsub < /home/jm33a/domain_evolution/scripts_and_resources/1KP_initial_search_and_tree.sh
 
 
-run="HAE"
+run="CLV1"
 
 scripts_dir=/home/jm33a/domain_evolution/scripts_and_resources
 
