@@ -41,7 +41,7 @@ require(ggtree)
 
 
 #run <- commandArgs(TRUE) #the name of the run should be passed from shell script
-run <- "CLV1"
+run <- "IKU2"
 setwd(paste("/home/jm33a/domain_evolution/clade_trees/", run, "/tree_from_hits/", sep = ""))
 
 tree <- read.tree(file = list.files(pattern = "*.treefile"))
@@ -53,12 +53,12 @@ tree <- root(tree, outgroup = outgroup, edgelabel = T, resolve.root = T) #root o
 
 #get the MRCA of the inputs - this is the target clade
 ####NOT CURRENTLY WORKING< NOT SURE HOW TO FIX####
-target.clade.geneIDs <- readLines(paste("..", list.files(path = "../", pattern = 'geneIDs.txt'), sep = "/"))
-at_genes_with_names <- tree$tip.label[grep(tree$tip.label, pattern = "AT.G......._")]
-target.clade.geneIDs <- target.clade.geneIDs[grep(pattern = "AT", target.clade.geneIDs,invert = T)]   #remove Araibidopsis genes because of naming issue
-target_clade_node <- getMRCA(tree, target.clade.geneIDs)
+#target.clade.geneIDs <- readLines(paste("..", list.files(path = "../", pattern = 'geneIDs.txt'), sep = "/"))
+#at_genes_with_names <- tree$tip.label[grep(tree$tip.label, pattern = "AT.G......._")]
+#target.clade.geneIDs <- target.clade.geneIDs[grep(pattern = "AT", target.clade.geneIDs,invert = T)]   #remove Araibidopsis genes because of naming issue
+#target_clade_node <- getMRCA(tree, target.clade.geneIDs)
 
-####FIGURE OUT BY PRINTING A TREE FIRsT####
+####Find node of target clade by printing initial tree####
 
 #human readable no branch lengths
 ggtree(tree, branch.length='none') + 
@@ -71,8 +71,12 @@ ggtree(tree, branch.length='none') +
 
 ggtree::ggsave(plot = last_plot(), filename = paste(run, "intitial_search_tree.pdf", sep = "."), height = length(tree$tip.label)/11, limitsize = FALSE)
 
+####Pause here and find internal node on tree######
 
-target_clade_node <- 2394
+
+
+
+target_clade_node <- 2128
 write.table(as.data.frame(extract.clade(tree, target_clade_node)["tip.label"]), file = paste(run,"extract_node",target_clade_node,"geneIDs.txt", sep = "_"), quote = F, row.names = F, col.names = F)
 
 
@@ -99,7 +103,7 @@ ggtree(tree, branch.length='none') +
   scale_x_continuous(expand = expand_scale(mult = c(0, 2))) + 
   geom_rootedge(rootedge = 1) +
   geom_hilight(node=target_clade_node) + #remove this line for first round before you know the MRCA node
-  geom_tiplab(size=1.8, align=T)   
+    geom_tiplab(size=1.8, align=T)   
 
 
 ggtree::ggsave(plot = last_plot(), filename = paste(run, "intitial_search_tree.pdf", sep = "."), height = length(tree$tip.label)/11, limitsize = FALSE)
@@ -108,15 +112,13 @@ ggtree::ggsave(plot = last_plot(), filename = paste(run, "intitial_search_tree.p
 
 
 
-#prints a tree with branch lengths, not very pretty yet.
+#prints a tree with visual branch lengths, not very pretty yet.
 ggtree(tree) + 
-  geom_nodelab(aes(label = node),size = 3, vjust = .75, hjust = -.15) +
-  geom_nodelab(aes(label = label),size = 1, vjust = -.75, hjust = -.15) +
-##  geom_tiplab(size=1.8, align=T) + 
+  #geom_nodelab(aes(label = node),size = 3, vjust = .75, hjust = -.15) +
+  #geom_nodelab(aes(label = label),size = 1, vjust = -.75, hjust = -.15) +
+  geom_hilight(node=target_clade_node) + #remove this line for first round before you know the MRCA node
+  ##  geom_tiplab(size=1.8, align=T) + 
   scale_x_continuous(expand = expand_scale(mult = c(0, .5)))
-ggtree::ggsave(plot = last_plot(), filename = "Rplot.pdf", height = length(tree$tip.label)/11, limitsize = FALSE)
-ggtree::ggsave(plot = last_plot(), filename = paste(run, "Rplot.pdf", sep = "."), height = 11, limitsize = FALSE)
-
-
-
+ggtree::ggsave(plot = last_plot(), filename = "Rplot_with_branches.pdf", height = length(tree$tip.label)/11, limitsize = FALSE)
+ggtree::ggsave(plot = last_plot(), filename = paste(run, "Rplot_with_branch_lengths.pdf", sep = "."), height = 11, limitsize = FALSE)
 

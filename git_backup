@@ -1,4 +1,5 @@
 
+cd /home/jm33a/domain_evolution/scripts_and_resources/
 
 git status # check on what needs updating
 
@@ -6,7 +7,7 @@ git status # check on what needs updating
 git add .
 
 #to commit these:
-git commit -m "message about commit"
+git commit -m "typical update commit"
 
 #not sure why, but avbove doesn't show up on web interface until this command is issued
 git push origin master

@@ -24,13 +24,15 @@ module load R/3.6.1_packages/tidyverse/1.3.0 gcc/8.1.0
 #           and remake the tree.
 #       3.It will then collect the nucleotide sequences for the same genes
 ################################################################################
-#  run as: bsub < /home/jm33a/domain_evolution/scripts_and_resources/1KP_followup_analyses.sh
+#  to run directly: bsub < /home/jm33a/domain_evolution/scripts_and_resources/1KP_followup_analyses.sh
 
 export run=${1} #this is the argument passed in from directing script
+#run=IKU2 #use this if need to just run one analysis, but make sure to un-comment the BSUBs above
 echo "This will run follow-up analyses for $run clade"
 
 scripts_dir=/home/jm33a/domain_evolution/scripts_and_resources
 cd /home/jm33a/domain_evolution/clade_trees/$run/tree_from_hits
+
 mkdir follow_up_analyses
 
 
@@ -53,15 +55,8 @@ echo "$(grep ">" $run.full_length_clade_seqs.fa | wc -l) full length $run sequen
 echo "aligning full-length $run clade sequences"
 	linsi --thread 16 $run.full_length_clade_seqs.fa > $run.full_length_clade_align.fasta 
 
-echo "running noisy to clean up alignment..."
-	noisy -s *align.fasta
-	#remove noisy log files
-	rm *typ.eps
-	rm *sta.gr
-	rm *idx.txt
-
 echo "Running IQtree with auto find model of evo and inference of site rate evolution.."
-iqtree -s *out.fas -bb 1000 -wsr -nt 16 -m JTT+R9 #full version, infer evo model and site rates
+iqtree -s $run.full_length_clade_align.fasta -bb 1000 -wsr -nt 16 -m JTT+R9 #full version, infer evo model and site rates
 
 echo "cleaning up.."
 		#remove iqtree log files
